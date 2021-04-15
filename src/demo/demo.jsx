@@ -7,19 +7,23 @@ const chartSeries = updateDataFailedConfig.series
 const chartData = updateDataFailedConfig.data
 
 const ChartDemo = () => {
-  const [numericField, setNumberField] = React.useState('POP2000__sum')
+  const [numericField, setNumberField] = React.useState('null')
   const [config, setConfig] = React.useState(chartConfig)
   const [selectedDataItems, setSelectedDataItems] = React.useState()
   const refValues = useRefValue(config)
 
   React.useEffect(() => {
     const config = refValues.current
+
     const data = chartData[numericField]
+
     const dataSource = {
       ...config.dataSource,
       data
     }
+
     const series = numericField && numericField !== 'null' ? [chartSeries[numericField]] : []
+
     setConfig({
       ...config,
       dataSource,
@@ -38,10 +42,10 @@ const ChartDemo = () => {
       <option value="POP2000__sum">POP2000__sum</option>
       <option value="POP2007__sum">POP2007__sum</option>
     </select>
-    <ChartComponent
+    {config.dataSource.data?.length > 0 && <ChartComponent
       config={config}
       selectedDataItems={selectedDataItems}
-    />
+    />}
   </div>
 
 }
