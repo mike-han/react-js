@@ -1,4 +1,4 @@
-# Arcgis charts demo
+# The demo of arcgis-cahrts
 
 - Clone this repo and checkout to branch `arcgis-charts-test`
 
