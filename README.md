@@ -1,0 +1,11 @@
+# Arcgis charts demo
+
+- Clone this repo and checkout to branch `arcgis-charts-test`
+
+- Copy `arcgis-charts-js` and `arcgis-charts-shared-utils` into `src`
+
+- Run `npm ci`
+
+- Run `npm start`
+
+- Open http://localhost:8080/
