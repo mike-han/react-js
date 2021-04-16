@@ -1,51 +1,79 @@
 import React from "react"
-import { useRefValue } from '../chart/utils'
-import { ChartComponent } from '../chart/chart-component'
-import updateDataFailedConfig from './update-data-failed'
-const chartConfig = updateDataFailedConfig.chartConfig
-const chartSeries = updateDataFailedConfig.series
-const chartData = updateDataFailedConfig.data
+import { createChart } from '../arcgis-charts/arcgis-charts-js'
+import { validateWebChart } from '../arcgis-charts/arcgis-charts-shared-utils'
+import chartConfig from './chart-config'
+
+const dummyValidateWebChart = (config) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ valid: !!config })
+    }, 50)
+  })
+}
 
 const ChartDemo = () => {
-  const [numericField, setNumberField] = React.useState('null')
   const [config, setConfig] = React.useState(chartConfig)
-  const [selectedDataItems, setSelectedDataItems] = React.useState()
-  const refValues = useRefValue(config)
+  const [options, setOptions] = React.useState()
+  const elRef = React.useRef(null)
+  const chartRef = React.useRef(null)
 
   React.useEffect(() => {
-    const config = refValues.current
+    dummyValidateWebChart({ input: config, queryObject: null }).then(state => {
+      if (!state.valid) {
+        if (chartRef.current) {
+          chartRef.current.dispose()
+          chartRef.current = null
+        }
+        return
+      }
 
-    const data = chartData[numericField]
+      if (!chartRef.current) {
+        console.log('createChart-start')
+        createChart({
+          chartConfig: config,
+          options,
+          chartContainer: elRef.current
+        }).then((res) => {
+          console.log('createChart-done')
+          chartRef.current = res
+        })
+      } else {
+        console.log('updateChart-start')
+        chartRef.current.update({
+          newChartConfig: config,
+          updateOptions: options
+        }).then(() => {
+          console.log('updateChart-done')
+        })
+      }
+    });
 
-    const dataSource = {
-      ...config.dataSource,
-      data
-    }
-
-    const series = numericField && numericField !== 'null' ? [chartSeries[numericField]] : []
-
-    setConfig({
-      ...config,
-      dataSource,
-      series
-    })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [numericField])
+  }, [config, options])
 
   React.useEffect(() => {
-    setSelectedDataItems([])
+    setOptions({ selectedDataItems: [] })
   }, [config])
 
-  return <div style={{ height: 400 }}>
-    <select value={numericField} onChange={e => setNumberField(e.target.value)}>
-      <option value="null">null</option>
-      <option value="POP2000__sum">POP2000__sum</option>
-      <option value="POP2007__sum">POP2007__sum</option>
-    </select>
-    {config.dataSource.data?.length > 0 && <ChartComponent
-      config={config}
-      selectedDataItems={selectedDataItems}
-    />}
+  const handleClearChart = () => {
+    if (chartRef.current) {
+      chartRef.current.dispose()
+      chartRef.current = null
+    }
+  }
+
+  const handleReRenderChart = () => {
+    setConfig({ ...chartConfig })
+  }
+
+  return <div style={{ height: 500 }}>
+    <div
+      style={{ width: '100%', height: '400px' }}
+      ref={elRef}
+    />
+    <div>
+      <button onClick={handleClearChart}>Clear</button>
+      <button onClick={handleReRenderChart}>Rerender</button>
+    </div>
   </div>
 
 }

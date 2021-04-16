@@ -24,7 +24,6 @@ export const ChartComponent = React.memo((props) => {
   const elRef = React.useRef(null)
   const chartRef = React.useRef(null)
 
-
   /**
    * When the data changes, put it into the `dataSource` of config
    */
