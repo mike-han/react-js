@@ -5,50 +5,25 @@ const dataSource = {
   type: 'inline',
   data: [
     {
-      SUB_REGION: 'East North Central',
-      POP2000__sum: 45155037,
-      objectid: 0,
+      "uniquedesignation": null,
+      "objectid__count": 9,
+      "objectid": 0
     },
     {
-      SUB_REGION: 'East South Central',
-      POP2000__sum: 17022810,
-      objectid: 1,
+      "uniquedesignation": "MIKE",
+      "objectid__count": 1,
+      "objectid": 1
     },
     {
-      SUB_REGION: 'Middle Atlantic',
-      POP2000__sum: 39671861,
-      objectid: 2,
+      "uniquedesignation": "PAULA",
+      "objectid__count": 1,
+      "objectid": 2
     },
     {
-      SUB_REGION: 'Mountain',
-      POP2000__sum: 18172295,
-      objectid: 3,
-    },
-    {
-      SUB_REGION: 'New England',
-      POP2000__sum: 13922517,
-      objectid: 4,
-    },
-    {
-      SUB_REGION: 'Pacific',
-      POP2000__sum: 45025637,
-      objectid: 5,
-    },
-    {
-      SUB_REGION: 'South Atlantic',
-      POP2000__sum: 51769160,
-      objectid: 6,
-    },
-    {
-      SUB_REGION: 'West North Central',
-      POP2000__sum: 19237739,
-      objectid: 7,
-    },
-    {
-      SUB_REGION: 'West South Central',
-      POP2000__sum: 31444850,
-      objectid: 8,
-    },
+      "uniquedesignation": "SLAM",
+      "objectid__count": 1,
+      "objectid": 3
+    }
   ],
   processed: true,
 }
@@ -60,23 +35,14 @@ renderButton.addEventListener('click', renderChart)
 
 function renderChart() {
   let chart = null
-  let config = { ...chartConfig }
+  let config = { ...chartConfig, dataSource }
   console.log('createChart-start')
   createChart({
     chartConfig: config,
     chartContainer: chartRoot,
+    options: { dataUpdated: true }
   }).then((res) => {
     console.log('createChart-done')
     chart = res
   })
-  setTimeout(() => {
-    console.log('updateChart-start')
-    config = { ...chartConfig, dataSource }
-    chart.update({
-        newChartConfig: config
-      })
-      .then(() => {
-        console.log('updateChart-done')
-      })
-  }, 590)
 }

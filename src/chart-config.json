@@ -1,12 +1,7 @@
 {
   "version": "1.0.0",
-  "id": "widget_1-column",
+  "id": "widget_2-column",
   "type": "chart",
-  "dataSource": {
-    "type": "inline",
-    "data": [],
-    "processed": true
-  },
   "series": [
     {
       "type": "barSeries",
@@ -25,7 +20,7 @@
             255
           ],
           "font": {
-            "family": "Arial",
+            "family": "Avenir Next",
             "size": 10,
             "style": "normal",
             "weight": "normal",
@@ -56,10 +51,10 @@
           "width": 0
         }
       },
-      "x": "SUB_REGION",
-      "y": "POP2000__sum",
-      "name": "POP2000",
-      "id": "POP2000__sum"
+      "x": "uniquedesignation",
+      "y": "objectid__count",
+      "name": "OBJECTID",
+      "id": "objectid__count"
     }
   ],
   "axes": [
@@ -79,7 +74,7 @@
             255
           ],
           "font": {
-            "family": "Arial",
+            "family": "Avenir Next",
             "size": 14,
             "style": "normal",
             "weight": "normal",
@@ -101,7 +96,7 @@
             255
           ],
           "font": {
-            "family": "Arial",
+            "family": "Avenir Next",
             "size": 14,
             "style": "normal",
             "weight": "normal",
@@ -154,7 +149,7 @@
             255
           ],
           "font": {
-            "family": "Arial",
+            "family": "Avenir Next",
             "size": 14,
             "style": "normal",
             "weight": "normal",
@@ -176,7 +171,7 @@
             255
           ],
           "font": {
-            "family": "Arial",
+            "family": "Avenir Next",
             "size": 14,
             "style": "normal",
             "weight": "normal",
@@ -224,5 +219,99 @@
     0,
     0,
     0
-  ]
+  ],
+  "title": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 24,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    }
+  },
+  "footer": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        24,
+        24,
+        24,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 14,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    }
+  },
+  "legend": {
+    "type": "chartLegend",
+    "visible": false,
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 20,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "body": {
+      "type": "esriTS",
+      "color": [
+        24,
+        24,
+        24,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 14,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    },
+    "position": "right"
+  },
+  "dataSource": {
+    "type": "inline",
+    "data": [],
+    "processed": true
+  }
 }
