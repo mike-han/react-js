@@ -1,0 +1,575 @@
+{
+  "version": "1.0.0",
+  "id": "widget_2-column",
+  "type": "chart",
+  "dataSource": {
+    "type": "inline",
+    "data": {
+      "dataItems": [
+        {
+          "STATE_NAME": "Alabama",
+          "OBJECTID_count": 1,
+          "objectid": 0
+        },
+        {
+          "STATE_NAME": "Alaska",
+          "OBJECTID_count": 1,
+          "objectid": 1
+        },
+        {
+          "STATE_NAME": "Arizona",
+          "OBJECTID_count": 1,
+          "objectid": 2
+        },
+        {
+          "STATE_NAME": "Arkansas",
+          "OBJECTID_count": 1,
+          "objectid": 3
+        },
+        {
+          "STATE_NAME": "California",
+          "OBJECTID_count": 1,
+          "objectid": 4
+        },
+        {
+          "STATE_NAME": "Colorado",
+          "OBJECTID_count": 1,
+          "objectid": 5
+        },
+        {
+          "STATE_NAME": "Connecticut",
+          "OBJECTID_count": 1,
+          "objectid": 6
+        },
+        {
+          "STATE_NAME": "Delaware",
+          "OBJECTID_count": 1,
+          "objectid": 7
+        },
+        {
+          "STATE_NAME": "District of Columbia",
+          "OBJECTID_count": 1,
+          "objectid": 8
+        },
+        {
+          "STATE_NAME": "Florida",
+          "OBJECTID_count": 1,
+          "objectid": 9
+        },
+        {
+          "STATE_NAME": "Georgia",
+          "OBJECTID_count": 1,
+          "objectid": 10
+        },
+        {
+          "STATE_NAME": "Hawaii",
+          "OBJECTID_count": 1,
+          "objectid": 11
+        },
+        {
+          "STATE_NAME": "Idaho",
+          "OBJECTID_count": 1,
+          "objectid": 12
+        },
+        {
+          "STATE_NAME": "Illinois",
+          "OBJECTID_count": 1,
+          "objectid": 13
+        },
+        {
+          "STATE_NAME": "Indiana",
+          "OBJECTID_count": 1,
+          "objectid": 14
+        },
+        {
+          "STATE_NAME": "Iowa",
+          "OBJECTID_count": 1,
+          "objectid": 15
+        },
+        {
+          "STATE_NAME": "Kansas",
+          "OBJECTID_count": 1,
+          "objectid": 16
+        },
+        {
+          "STATE_NAME": "Kentucky",
+          "OBJECTID_count": 1,
+          "objectid": 17
+        },
+        {
+          "STATE_NAME": "Louisiana",
+          "OBJECTID_count": 1,
+          "objectid": 18
+        },
+        {
+          "STATE_NAME": "Maine",
+          "OBJECTID_count": 1,
+          "objectid": 19
+        },
+        {
+          "STATE_NAME": "Maryland",
+          "OBJECTID_count": 1,
+          "objectid": 20
+        },
+        {
+          "STATE_NAME": "Massachusetts",
+          "OBJECTID_count": 1,
+          "objectid": 21
+        },
+        {
+          "STATE_NAME": "Michigan",
+          "OBJECTID_count": 1,
+          "objectid": 22
+        },
+        {
+          "STATE_NAME": "Minnesota",
+          "OBJECTID_count": 1,
+          "objectid": 23
+        },
+        {
+          "STATE_NAME": "Mississippi",
+          "OBJECTID_count": 1,
+          "objectid": 24
+        },
+        {
+          "STATE_NAME": "Missouri",
+          "OBJECTID_count": 1,
+          "objectid": 25
+        },
+        {
+          "STATE_NAME": "Montana",
+          "OBJECTID_count": 1,
+          "objectid": 26
+        },
+        {
+          "STATE_NAME": "Nebraska",
+          "OBJECTID_count": 1,
+          "objectid": 27
+        },
+        {
+          "STATE_NAME": "Nevada",
+          "OBJECTID_count": 1,
+          "objectid": 28
+        },
+        {
+          "STATE_NAME": "New Hampshire",
+          "OBJECTID_count": 1,
+          "objectid": 29
+        },
+        {
+          "STATE_NAME": "New Jersey",
+          "OBJECTID_count": 1,
+          "objectid": 30
+        },
+        {
+          "STATE_NAME": "New Mexico",
+          "OBJECTID_count": 1,
+          "objectid": 31
+        },
+        {
+          "STATE_NAME": "New York",
+          "OBJECTID_count": 1,
+          "objectid": 32
+        },
+        {
+          "STATE_NAME": "North Carolina",
+          "OBJECTID_count": 1,
+          "objectid": 33
+        },
+        {
+          "STATE_NAME": "North Dakota",
+          "OBJECTID_count": 1,
+          "objectid": 34
+        },
+        {
+          "STATE_NAME": "Ohio",
+          "OBJECTID_count": 1,
+          "objectid": 35
+        },
+        {
+          "STATE_NAME": "Oklahoma",
+          "OBJECTID_count": 1,
+          "objectid": 36
+        },
+        {
+          "STATE_NAME": "Oregon",
+          "OBJECTID_count": 1,
+          "objectid": 37
+        },
+        {
+          "STATE_NAME": "Pennsylvania",
+          "OBJECTID_count": 1,
+          "objectid": 38
+        },
+        {
+          "STATE_NAME": "Rhode Island",
+          "OBJECTID_count": 1,
+          "objectid": 39
+        },
+        {
+          "STATE_NAME": "South Carolina",
+          "OBJECTID_count": 1,
+          "objectid": 40
+        },
+        {
+          "STATE_NAME": "South Dakota",
+          "OBJECTID_count": 1,
+          "objectid": 41
+        },
+        {
+          "STATE_NAME": "Tennessee",
+          "OBJECTID_count": 1,
+          "objectid": 42
+        },
+        {
+          "STATE_NAME": "Texas",
+          "OBJECTID_count": 1,
+          "objectid": 43
+        },
+        {
+          "STATE_NAME": "Utah",
+          "OBJECTID_count": 1,
+          "objectid": 44
+        },
+        {
+          "STATE_NAME": "Vermont",
+          "OBJECTID_count": 1,
+          "objectid": 45
+        },
+        {
+          "STATE_NAME": "Virginia",
+          "OBJECTID_count": 1,
+          "objectid": 46
+        },
+        {
+          "STATE_NAME": "Washington",
+          "OBJECTID_count": 1,
+          "objectid": 47
+        },
+        {
+          "STATE_NAME": "West Virginia",
+          "OBJECTID_count": 1,
+          "objectid": 48
+        },
+        {
+          "STATE_NAME": "Wisconsin",
+          "OBJECTID_count": 1,
+          "objectid": 49
+        },
+        {
+          "STATE_NAME": "Wyoming",
+          "OBJECTID_count": 1,
+          "objectid": 50
+        }
+      ]
+    },
+    "processed": true
+  },
+  "title": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 24,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    }
+  },
+  "footer": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        24,
+        24,
+        24,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 14,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    }
+  },
+  "legend": {
+    "type": "chartLegend",
+    "visible": false,
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 20,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "body": {
+      "type": "esriTS",
+      "color": [
+        24,
+        24,
+        24,
+        255
+      ],
+      "font": {
+        "family": "Avenir Next",
+        "size": 14,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center",
+      "text": ""
+    },
+    "position": "right"
+  },
+  "series": [
+    {
+      "type": "barSeries",
+      "id": "OBJECTID",
+      "name": "OBJECTID",
+      "x": "STATE_NAME",
+      "y": "OBJECTID_count",
+      "colorType": "singleColor",
+      "stackedType": "sideBySide",
+      "fillSymbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+          94,
+          143,
+          208,
+          255
+        ],
+        "outline": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "width": 0
+        }
+      },
+      "dataLabels": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            54,
+            54,
+            54,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 10,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "text": ""
+        }
+      },
+      "rotated": false
+    }
+  ],
+  "background": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "axes": [
+    {
+      "type": "chartAxis",
+      "visible": true,
+      "isLogarithmic": false,
+      "title": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 14,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle"
+        }
+      },
+      "labels": {
+        "type": "chartText",
+        "visible": true,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            68,
+            68,
+            68,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 14,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle"
+        }
+      },
+      "valueFormat": {
+        "type": "category",
+        "characterLimit": 11
+      },
+      "lineSymbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          139,
+          139,
+          139,
+          255
+        ],
+        "width": 1
+      },
+      "grid": {
+        "type": "esriSLS",
+        "style": "esriSLSDash",
+        "color": [
+          213,
+          213,
+          213,
+          255
+        ],
+        "width": 1
+      }
+    },
+    {
+      "type": "chartAxis",
+      "visible": true,
+      "isLogarithmic": false,
+      "title": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 14,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle"
+        }
+      },
+      "labels": {
+        "type": "chartText",
+        "visible": true,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            68,
+            68,
+            68,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 14,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle"
+        }
+      },
+      "valueFormat": {
+        "type": "number",
+        "intlOptions": {
+          "style": "decimal",
+          "useGrouping": true,
+          "minimumFractionDigits": 0,
+          "maximumFractionDigits": 3
+        }
+      },
+      "lineSymbol": {
+        "type": "esriSLS",
+        "style": "esriSLSSolid",
+        "color": [
+          139,
+          139,
+          139,
+          255
+        ],
+        "width": 1
+      },
+      "grid": {
+        "type": "esriSLS",
+        "style": "esriSLSDash",
+        "color": [
+          213,
+          213,
+          213,
+          255
+        ],
+        "width": 1
+      }
+    }
+  ]
+}
