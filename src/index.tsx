@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactEditor from "react-editor-test";
+import ReactEditor from "@mike-han/react-editor-test";
 
 const HelloWorld = () => {
   return <ReactEditor name="First NPM package"></ReactEditor>;
