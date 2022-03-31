@@ -29,7 +29,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@mike-han/react-editor-test": "^1.0.0",
+    "@sep8/monorepo-app": "0.2.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-quill": "^1.3.5"

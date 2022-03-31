@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ReactEditor from "@mike-han/react-editor-test";
+import MonorepoApp from "@sep8/monorepo-app";
 
 const HelloWorld = () => {
-  return <ReactEditor name="First NPM package"></ReactEditor>;
+  return <MonorepoApp name="Mng" label="First NPM packag"></MonorepoApp>;
 };
 
 ReactDOM.render(<HelloWorld />, document.getElementById("root"));
