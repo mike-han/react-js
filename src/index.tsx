@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import MonorepoApp from "@sep8/monorepo-app";
+import MonorepoApp from "@sep9/app";
 
 const HelloWorld = () => {
   return <MonorepoApp name="Mng" label="First NPM packag"></MonorepoApp>;
