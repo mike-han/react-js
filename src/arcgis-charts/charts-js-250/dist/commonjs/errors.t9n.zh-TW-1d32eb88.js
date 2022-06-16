@@ -1,0 +1,1 @@
+"use strict";const r={invalidData:"資料無效",invalidChart:"圖表無效",tooManyFeatures:"圖徵過多",error:"錯誤",warning:"警告",newChart:"新圖表"},e={divNode:"建立圖表需要 HTML div 節點。",errorRequest:"請修正下列錯誤: ",warningRequest:"請解決下列警告: ",newChartRequest:"配置圖表。",queryError:"無法讀取輸入資料。",simpleError:"發生錯誤。"};var a={modalHeaders:r,errors:e};exports.default=a,exports.errors=e,exports.modalHeaders=r;
