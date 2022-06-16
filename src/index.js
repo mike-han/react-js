@@ -1,5 +1,5 @@
-import { createChart as _createChart } from './arcgis-charts/charts-js-250' //v1.0.0-beta.250
-// import { createChart as _createChart } from '@arcgis/charts-js' //v1.0.0-beta.280
+// import { createChart as _createChart } from './arcgis-charts/charts-js-250' //v1.0.0-beta.250
+import { createChart as _createChart } from '@arcgis/charts-js' //v1.0.0-beta.280
 import config from './config'
 const inputData = config.dataSource.data
 
