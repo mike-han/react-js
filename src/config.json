@@ -1,567 +1,96 @@
 {
   "version": "1.0.0",
-  "id": "widget_5-column",
+  "id": "widget_1-donut",
   "type": "chart",
-  "dataSource": {
-    "type": "inline",
-    "data": {
-      "dataItems": [
-        {
-          "F1900_Pop__sum": 53694,
-          "F1910_Pop__sum": 62411,
-          "F1920_Pop__sum": 69938,
-          "F1930_Pop__sum": 79098,
-          "F1940_Pop__sum": 86973,
-          "F1950_Pop__sum": 89556,
-          "F1960_Pop__sum": 84169,
-          "F1970_Pop__sum": 84044,
-          "F1980_Pop__sum": 80548,
-          "F1990_Pop__sum": 74946,
-          "F2000_Pop__sum": 74930,
-          "F2010_Pop__sum": 75087,
-          "F2015_Pop__sum": 72462,
-          "F2020_Pop__sum": 74150,
-          "F2025_Pop__sum": 74900,
-          "F2030_Pop__sum": 75650,
-          "F2035_Pop__sum": 75900,
-          "F2040_Pop__sum": 76050,
-          "F2045_Pop__sum": 76200,
-          "GEODESC_2": "Allegany",
-          "objectid": 0
-        },
-        {
-          "F1900_Pop__sum": 39620,
-          "F1910_Pop__sum": 39553,
-          "F1920_Pop__sum": 43408,
-          "F1930_Pop__sum": 55167,
-          "F1940_Pop__sum": 68375,
-          "F1950_Pop__sum": 117392,
-          "F1960_Pop__sum": 206634,
-          "F1970_Pop__sum": 297539,
-          "F1980_Pop__sum": 370775,
-          "F1990_Pop__sum": 427239,
-          "F2000_Pop__sum": 489656,
-          "F2010_Pop__sum": 537656,
-          "F2015_Pop__sum": 563027,
-          "F2020_Pop__sum": 573250,
-          "F2025_Pop__sum": 584400,
-          "F2030_Pop__sum": 596700,
-          "F2035_Pop__sum": 608950,
-          "F2040_Pop__sum": 622250,
-          "F2045_Pop__sum": 637900,
-          "GEODESC_2": "Anne Arundel",
-          "objectid": 1
-        },
-        {
-          "F1900_Pop__sum": 90755,
-          "F1910_Pop__sum": 122349,
-          "F1920_Pop__sum": 74817,
-          "F1930_Pop__sum": 124565,
-          "F1940_Pop__sum": 155825,
-          "F1950_Pop__sum": 270273,
-          "F1960_Pop__sum": 492428,
-          "F1970_Pop__sum": 621077,
-          "F1980_Pop__sum": 655615,
-          "F1990_Pop__sum": 692134,
-          "F2000_Pop__sum": 754292,
-          "F2010_Pop__sum": 805029,
-          "F2015_Pop__sum": 827533,
-          "F2020_Pop__sum": 847000,
-          "F2025_Pop__sum": 857000,
-          "F2030_Pop__sum": 862200,
-          "F2035_Pop__sum": 869500,
-          "F2040_Pop__sum": 880750,
-          "F2045_Pop__sum": 892150,
-          "GEODESC_2": "Baltimore",
-          "objectid": 2
-        },
-        {
-          "F1900_Pop__sum": 508957,
-          "F1910_Pop__sum": 558485,
-          "F1920_Pop__sum": 733826,
-          "F1930_Pop__sum": 804874,
-          "F1940_Pop__sum": 859100,
-          "F1950_Pop__sum": 949708,
-          "F1960_Pop__sum": 939024,
-          "F1970_Pop__sum": 905759,
-          "F1980_Pop__sum": 786775,
-          "F1990_Pop__sum": 736014,
-          "F2000_Pop__sum": 651154,
-          "F2010_Pop__sum": 620961,
-          "F2015_Pop__sum": 622522,
-          "F2020_Pop__sum": 616300,
-          "F2025_Pop__sum": 618300,
-          "F2030_Pop__sum": 625100,
-          "F2035_Pop__sum": 627300,
-          "F2040_Pop__sum": 643400,
-          "F2045_Pop__sum": 643650,
-          "GEODESC_2": "Baltimore City",
-          "objectid": 3
-        },
-        {
-          "F1900_Pop__sum": 10223,
-          "F1910_Pop__sum": 10325,
-          "F1920_Pop__sum": 9744,
-          "F1930_Pop__sum": 9528,
-          "F1940_Pop__sum": 10484,
-          "F1950_Pop__sum": 12100,
-          "F1960_Pop__sum": 15826,
-          "F1970_Pop__sum": 20682,
-          "F1980_Pop__sum": 34638,
-          "F1990_Pop__sum": 51372,
-          "F2000_Pop__sum": 74563,
-          "F2010_Pop__sum": 88737,
-          "F2015_Pop__sum": 90477,
-          "F2020_Pop__sum": 94600,
-          "F2025_Pop__sum": 97350,
-          "F2030_Pop__sum": 99200,
-          "F2035_Pop__sum": 100050,
-          "F2040_Pop__sum": 100450,
-          "F2045_Pop__sum": 100850,
-          "GEODESC_2": "Calvert",
-          "objectid": 4
-        },
-        {
-          "F1900_Pop__sum": 16248,
-          "F1910_Pop__sum": 19216,
-          "F1920_Pop__sum": 18652,
-          "F1930_Pop__sum": 17387,
-          "F1940_Pop__sum": 17549,
-          "F1950_Pop__sum": 18234,
-          "F1960_Pop__sum": 19462,
-          "F1970_Pop__sum": 19781,
-          "F1980_Pop__sum": 23143,
-          "F1990_Pop__sum": 27035,
-          "F2000_Pop__sum": 29772,
-          "F2010_Pop__sum": 33066,
-          "F2015_Pop__sum": 32595,
-          "F2020_Pop__sum": 34050,
-          "F2025_Pop__sum": 36250,
-          "F2030_Pop__sum": 38450,
-          "F2035_Pop__sum": 40750,
-          "F2040_Pop__sum": 42950,
-          "F2045_Pop__sum": 45250,
-          "GEODESC_2": "Caroline",
-          "objectid": 5
-        },
-        {
-          "F1900_Pop__sum": 33860,
-          "F1910_Pop__sum": 33934,
-          "F1920_Pop__sum": 34245,
-          "F1930_Pop__sum": 35978,
-          "F1940_Pop__sum": 39054,
-          "F1950_Pop__sum": 44907,
-          "F1960_Pop__sum": 52785,
-          "F1970_Pop__sum": 69006,
-          "F1980_Pop__sum": 96356,
-          "F1990_Pop__sum": 123372,
-          "F2000_Pop__sum": 150897,
-          "F2010_Pop__sum": 167134,
-          "F2015_Pop__sum": 167132,
-          "F2020_Pop__sum": 169200,
-          "F2025_Pop__sum": 171700,
-          "F2030_Pop__sum": 175150,
-          "F2035_Pop__sum": 178500,
-          "F2040_Pop__sum": 181800,
-          "F2045_Pop__sum": 185150,
-          "GEODESC_2": "Carroll",
-          "objectid": 6
-        },
-        {
-          "F1900_Pop__sum": 24662,
-          "F1910_Pop__sum": 23759,
-          "F1920_Pop__sum": 23612,
-          "F1930_Pop__sum": 25827,
-          "F1940_Pop__sum": 26407,
-          "F1950_Pop__sum": 33356,
-          "F1960_Pop__sum": 48408,
-          "F1970_Pop__sum": 53291,
-          "F1980_Pop__sum": 60430,
-          "F1990_Pop__sum": 71347,
-          "F2000_Pop__sum": 85951,
-          "F2010_Pop__sum": 101108,
-          "F2015_Pop__sum": 102382,
-          "F2020_Pop__sum": 104600,
-          "F2025_Pop__sum": 111600,
-          "F2030_Pop__sum": 119550,
-          "F2035_Pop__sum": 127200,
-          "F2040_Pop__sum": 135450,
-          "F2045_Pop__sum": 142550,
-          "GEODESC_2": "Cecil",
-          "objectid": 7
-        },
-        {
-          "F1900_Pop__sum": 17662,
-          "F1910_Pop__sum": 16386,
-          "F1920_Pop__sum": 17705,
-          "F1930_Pop__sum": 16166,
-          "F1940_Pop__sum": 17612,
-          "F1950_Pop__sum": 23415,
-          "F1960_Pop__sum": 32572,
-          "F1970_Pop__sum": 47678,
-          "F1980_Pop__sum": 72751,
-          "F1990_Pop__sum": 101154,
-          "F2000_Pop__sum": 120546,
-          "F2010_Pop__sum": 146551,
-          "F2015_Pop__sum": 155665,
-          "F2020_Pop__sum": 167050,
-          "F2025_Pop__sum": 178250,
-          "F2030_Pop__sum": 194650,
-          "F2035_Pop__sum": 207500,
-          "F2040_Pop__sum": 218550,
-          "F2045_Pop__sum": 229750,
-          "GEODESC_2": "Charles",
-          "objectid": 8
-        },
-        {
-          "F1900_Pop__sum": 27962,
-          "F1910_Pop__sum": 28669,
-          "F1920_Pop__sum": 27895,
-          "F1930_Pop__sum": 26813,
-          "F1940_Pop__sum": 28006,
-          "F1950_Pop__sum": 27815,
-          "F1960_Pop__sum": 29666,
-          "F1970_Pop__sum": 29405,
-          "F1980_Pop__sum": 30623,
-          "F1990_Pop__sum": 30236,
-          "F2000_Pop__sum": 30674,
-          "F2010_Pop__sum": 32618,
-          "F2015_Pop__sum": 32419,
-          "F2020_Pop__sum": 34300,
-          "F2025_Pop__sum": 36050,
-          "F2030_Pop__sum": 37350,
-          "F2035_Pop__sum": 38600,
-          "F2040_Pop__sum": 39500,
-          "F2045_Pop__sum": 40450,
-          "GEODESC_2": "Dorchester",
-          "objectid": 9
-        },
-        {
-          "F1900_Pop__sum": 51920,
-          "F1910_Pop__sum": 52673,
-          "F1920_Pop__sum": 52541,
-          "F1930_Pop__sum": 54440,
-          "F1940_Pop__sum": 57312,
-          "F1950_Pop__sum": 62287,
-          "F1960_Pop__sum": 71930,
-          "F1970_Pop__sum": 84927,
-          "F1980_Pop__sum": 114792,
-          "F1990_Pop__sum": 150208,
-          "F2000_Pop__sum": 195277,
-          "F2010_Pop__sum": 233385,
-          "F2015_Pop__sum": 245001,
-          "F2020_Pop__sum": 260800,
-          "F2025_Pop__sum": 288700,
-          "F2030_Pop__sum": 303600,
-          "F2035_Pop__sum": 319350,
-          "F2040_Pop__sum": 332150,
-          "F2045_Pop__sum": 344150,
-          "GEODESC_2": "Frederick",
-          "objectid": 10
-        },
-        {
-          "F1900_Pop__sum": 17701,
-          "F1910_Pop__sum": 20105,
-          "F1920_Pop__sum": 19678,
-          "F1930_Pop__sum": 19908,
-          "F1940_Pop__sum": 21981,
-          "F1950_Pop__sum": 21259,
-          "F1960_Pop__sum": 20420,
-          "F1970_Pop__sum": 21476,
-          "F1980_Pop__sum": 26498,
-          "F1990_Pop__sum": 28138,
-          "F2000_Pop__sum": 29846,
-          "F2010_Pop__sum": 30097,
-          "F2015_Pop__sum": 29426,
-          "F2020_Pop__sum": 30300,
-          "F2025_Pop__sum": 30900,
-          "F2030_Pop__sum": 31250,
-          "F2035_Pop__sum": 31400,
-          "F2040_Pop__sum": 31450,
-          "F2045_Pop__sum": 31500,
-          "GEODESC_2": "Garrett",
-          "objectid": 11
-        },
-        {
-          "F1900_Pop__sum": 28269,
-          "F1910_Pop__sum": 27965,
-          "F1920_Pop__sum": 29291,
-          "F1930_Pop__sum": 31603,
-          "F1940_Pop__sum": 35060,
-          "F1950_Pop__sum": 51782,
-          "F1960_Pop__sum": 76722,
-          "F1970_Pop__sum": 115378,
-          "F1980_Pop__sum": 145930,
-          "F1990_Pop__sum": 182132,
-          "F2000_Pop__sum": 218590,
-          "F2010_Pop__sum": 244826,
-          "F2015_Pop__sum": 249558,
-          "F2020_Pop__sum": 257700,
-          "F2025_Pop__sum": 264850,
-          "F2030_Pop__sum": 271850,
-          "F2035_Pop__sum": 280550,
-          "F2040_Pop__sum": 289200,
-          "F2045_Pop__sum": 294250,
-          "GEODESC_2": "Harford",
-          "objectid": 12
-        },
-        {
-          "F1900_Pop__sum": 16715,
-          "F1910_Pop__sum": 16106,
-          "F1920_Pop__sum": 15826,
-          "F1930_Pop__sum": 16169,
-          "F1940_Pop__sum": 17175,
-          "F1950_Pop__sum": 23119,
-          "F1960_Pop__sum": 36152,
-          "F1970_Pop__sum": 61911,
-          "F1980_Pop__sum": 118572,
-          "F1990_Pop__sum": 187328,
-          "F2000_Pop__sum": 247842,
-          "F2010_Pop__sum": 287085,
-          "F2015_Pop__sum": 311297,
-          "F2020_Pop__sum": 336900,
-          "F2025_Pop__sum": 355700,
-          "F2030_Pop__sum": 366800,
-          "F2035_Pop__sum": 369500,
-          "F2040_Pop__sum": 371850,
-          "F2045_Pop__sum": 372350,
-          "GEODESC_2": "Howard",
-          "objectid": 13
-        },
-        {
-          "F1900_Pop__sum": 18786,
-          "F1910_Pop__sum": 16957,
-          "F1920_Pop__sum": 15026,
-          "F1930_Pop__sum": 14242,
-          "F1940_Pop__sum": 13465,
-          "F1950_Pop__sum": 13677,
-          "F1960_Pop__sum": 15481,
-          "F1970_Pop__sum": 16146,
-          "F1980_Pop__sum": 16695,
-          "F1990_Pop__sum": 17842,
-          "F2000_Pop__sum": 19197,
-          "F2010_Pop__sum": 20197,
-          "F2015_Pop__sum": 19715,
-          "F2020_Pop__sum": 20900,
-          "F2025_Pop__sum": 21600,
-          "F2030_Pop__sum": 22100,
-          "F2035_Pop__sum": 22550,
-          "F2040_Pop__sum": 23000,
-          "F2045_Pop__sum": 23450,
-          "GEODESC_2": "Kent",
-          "objectid": 14
-        },
-        {
-          "F1900_Pop__sum": 30451,
-          "F1910_Pop__sum": 32089,
-          "F1920_Pop__sum": 34921,
-          "F1930_Pop__sum": 49206,
-          "F1940_Pop__sum": 83912,
-          "F1950_Pop__sum": 164401,
-          "F1960_Pop__sum": 340928,
-          "F1970_Pop__sum": 522809,
-          "F1980_Pop__sum": 579053,
-          "F1990_Pop__sum": 757027,
-          "F2000_Pop__sum": 873341,
-          "F2010_Pop__sum": 971777,
-          "F2015_Pop__sum": 1032814,
-          "F2020_Pop__sum": 1052050,
-          "F2025_Pop__sum": 1087250,
-          "F2030_Pop__sum": 1128800,
-          "F2035_Pop__sum": 1167700,
-          "F2040_Pop__sum": 1197150,
-          "F2045_Pop__sum": 1223350,
-          "GEODESC_2": "Montgomery",
-          "objectid": 15
-        },
-        {
-          "F1900_Pop__sum": 29898,
-          "F1910_Pop__sum": 36147,
-          "F1920_Pop__sum": 43347,
-          "F1930_Pop__sum": 60095,
-          "F1940_Pop__sum": 89490,
-          "F1950_Pop__sum": 194182,
-          "F1960_Pop__sum": 357395,
-          "F1970_Pop__sum": 660567,
-          "F1980_Pop__sum": 665071,
-          "F1990_Pop__sum": 728553,
-          "F2000_Pop__sum": 801515,
-          "F2010_Pop__sum": 863420,
-          "F2015_Pop__sum": 906197,
-          "F2020_Pop__sum": 916150,
-          "F2025_Pop__sum": 938000,
-          "F2030_Pop__sum": 952950,
-          "F2035_Pop__sum": 967850,
-          "F2040_Pop__sum": 982400,
-          "F2045_Pop__sum": 995900,
-          "GEODESC_2": "Prince George's",
-          "objectid": 16
-        },
-        {
-          "F1900_Pop__sum": 18364,
-          "F1910_Pop__sum": 16839,
-          "F1920_Pop__sum": 16001,
-          "F1930_Pop__sum": 14571,
-          "F1940_Pop__sum": 14476,
-          "F1950_Pop__sum": 14579,
-          "F1960_Pop__sum": 16569,
-          "F1970_Pop__sum": 18422,
-          "F1980_Pop__sum": 25508,
-          "F1990_Pop__sum": 33953,
-          "F2000_Pop__sum": 40563,
-          "F2010_Pop__sum": 47798,
-          "F2015_Pop__sum": 48984,
-          "F2020_Pop__sum": 50750,
-          "F2025_Pop__sum": 52850,
-          "F2030_Pop__sum": 55750,
-          "F2035_Pop__sum": 58500,
-          "F2040_Pop__sum": 61050,
-          "F2045_Pop__sum": 64150,
-          "GEODESC_2": "Queen Anne's",
-          "objectid": 17
-        },
-        {
-          "F1900_Pop__sum": 25923,
-          "F1910_Pop__sum": 26455,
-          "F1920_Pop__sum": 24602,
-          "F1930_Pop__sum": 23382,
-          "F1940_Pop__sum": 20965,
-          "F1950_Pop__sum": 20745,
-          "F1960_Pop__sum": 19623,
-          "F1970_Pop__sum": 18924,
-          "F1980_Pop__sum": 19188,
-          "F1990_Pop__sum": 23440,
-          "F2000_Pop__sum": 24747,
-          "F2010_Pop__sum": 26470,
-          "F2015_Pop__sum": 25687,
-          "F2020_Pop__sum": 26750,
-          "F2025_Pop__sum": 28000,
-          "F2030_Pop__sum": 28450,
-          "F2035_Pop__sum": 29350,
-          "F2040_Pop__sum": 29550,
-          "F2045_Pop__sum": 29750,
-          "GEODESC_2": "Somerset",
-          "objectid": 18
-        },
-        {
-          "F1900_Pop__sum": 17182,
-          "F1910_Pop__sum": 17030,
-          "F1920_Pop__sum": 16112,
-          "F1930_Pop__sum": 15189,
-          "F1940_Pop__sum": 14626,
-          "F1950_Pop__sum": 29111,
-          "F1960_Pop__sum": 38915,
-          "F1970_Pop__sum": 47388,
-          "F1980_Pop__sum": 59895,
-          "F1990_Pop__sum": 75974,
-          "F2000_Pop__sum": 86211,
-          "F2010_Pop__sum": 105151,
-          "F2015_Pop__sum": 110985,
-          "F2020_Pop__sum": 120150,
-          "F2025_Pop__sum": 129200,
-          "F2030_Pop__sum": 140750,
-          "F2035_Pop__sum": 148150,
-          "F2040_Pop__sum": 155350,
-          "F2045_Pop__sum": 162900,
-          "GEODESC_2": "St. Mary's",
-          "objectid": 19
-        },
-        {
-          "F1900_Pop__sum": 20342,
-          "F1910_Pop__sum": 19620,
-          "F1920_Pop__sum": 18306,
-          "F1930_Pop__sum": 18583,
-          "F1940_Pop__sum": 18784,
-          "F1950_Pop__sum": 19428,
-          "F1960_Pop__sum": 21578,
-          "F1970_Pop__sum": 23682,
-          "F1980_Pop__sum": 25604,
-          "F1990_Pop__sum": 30549,
-          "F2000_Pop__sum": 33812,
-          "F2010_Pop__sum": 37782,
-          "F2015_Pop__sum": 37413,
-          "F2020_Pop__sum": 38850,
-          "F2025_Pop__sum": 40050,
-          "F2030_Pop__sum": 40900,
-          "F2035_Pop__sum": 41550,
-          "F2040_Pop__sum": 42000,
-          "F2045_Pop__sum": 42450,
-          "GEODESC_2": "Talbot",
-          "objectid": 20
-        },
-        {
-          "F1900_Pop__sum": 45133,
-          "F1910_Pop__sum": 49617,
-          "F1920_Pop__sum": 59694,
-          "F1930_Pop__sum": 65882,
-          "F1940_Pop__sum": 68838,
-          "F1950_Pop__sum": 78886,
-          "F1960_Pop__sum": 91219,
-          "F1970_Pop__sum": 103829,
-          "F1980_Pop__sum": 113086,
-          "F1990_Pop__sum": 121393,
-          "F2000_Pop__sum": 131923,
-          "F2010_Pop__sum": 147430,
-          "F2015_Pop__sum": 149068,
-          "F2020_Pop__sum": 156800,
-          "F2025_Pop__sum": 166450,
-          "F2030_Pop__sum": 175400,
-          "F2035_Pop__sum": 183100,
-          "F2040_Pop__sum": 189950,
-          "F2045_Pop__sum": 197050,
-          "GEODESC_2": "Washington",
-          "objectid": 21
-        },
-        {
-          "F1900_Pop__sum": 22852,
-          "F1910_Pop__sum": 26815,
-          "F1920_Pop__sum": 28165,
-          "F1930_Pop__sum": 31229,
-          "F1940_Pop__sum": 34530,
-          "F1950_Pop__sum": 39641,
-          "F1960_Pop__sum": 49050,
-          "F1970_Pop__sum": 54236,
-          "F1980_Pop__sum": 64540,
-          "F1990_Pop__sum": 74339,
-          "F2000_Pop__sum": 84644,
-          "F2010_Pop__sum": 98733,
-          "F2015_Pop__sum": 101747,
-          "F2020_Pop__sum": 106200,
-          "F2025_Pop__sum": 111400,
-          "F2030_Pop__sum": 118200,
-          "F2035_Pop__sum": 122650,
-          "F2040_Pop__sum": 126650,
-          "F2045_Pop__sum": 130800,
-          "GEODESC_2": "Wicomico",
-          "objectid": 22
-        },
-        {
-          "F1900_Pop__sum": 20865,
-          "F1910_Pop__sum": 21841,
-          "F1920_Pop__sum": 22309,
-          "F1930_Pop__sum": 21624,
-          "F1940_Pop__sum": 21245,
-          "F1950_Pop__sum": 23148,
-          "F1960_Pop__sum": 23733,
-          "F1970_Pop__sum": 24442,
-          "F1980_Pop__sum": 30889,
-          "F1990_Pop__sum": 35028,
-          "F2000_Pop__sum": 46543,
-          "F2010_Pop__sum": 51454,
-          "F2015_Pop__sum": 51456,
-          "F2020_Pop__sum": 53100,
-          "F2025_Pop__sum": 55750,
-          "F2030_Pop__sum": 57950,
-          "F2035_Pop__sum": 60450,
-          "F2040_Pop__sum": 61600,
-          "F2045_Pop__sum": 62750,
-          "GEODESC_2": "Worcester",
-          "objectid": 23
+  "series": [
+    {
+      "type": "pieSeries",
+      "colorType": "colorMatch",
+      "id": "FID",
+      "name": "Count",
+      "x": "Year",
+      "y": "FID_count",
+      "innerRadius": 60,
+      "startAngle": 0,
+      "endAngle": 360,
+      "displayNumericValueOnDataLabel": true,
+      "displayPercentageOnDataLabel": false,
+      "displayNumericValueOnTooltip": true,
+      "displayPercentageOnTooltip": true,
+      "dataLabelsOffset": 0,
+      "sliceGrouping": {
+        "percentageThreshold": 0,
+        "groupName": "Other"
+      },
+      "numericValueFormat": {
+        "type": "number",
+        "intlOptions": {
+          "style": "decimal",
+          "useGrouping": true,
+          "minimumFractionDigits": 0,
+          "maximumFractionDigits": 3
         }
-      ]
-    },
-    "processed": true
-  },
+      },
+      "percentValueFormat": {
+        "type": "number",
+        "intlOptions": {
+          "style": "decimal",
+          "useGrouping": true,
+          "minimumFractionDigits": 0,
+          "maximumFractionDigits": 3
+        }
+      },
+      "fillSymbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
+        "color": [
+          214,
+          214,
+          214,
+          255
+        ],
+        "outline": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            240,
+            240,
+            240,
+            255
+          ],
+          "width": 1
+        }
+      },
+      "dataLabels": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            54,
+            54,
+            54,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 10,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "top"
+        }
+      }
+    }
+  ],
+  "background": [
+    0,
+    0,
+    0,
+    0
+  ],
   "title": {
     "type": "chartText",
     "visible": true,
@@ -581,7 +110,7 @@
         "decoration": "none"
       },
       "horizontalAlignment": "center",
-      "text": "Historical (blue) and Projected (green) Population"
+      "text": ""
     }
   },
   "footer": {
@@ -603,7 +132,7 @@
         "decoration": "none"
       },
       "horizontalAlignment": "center",
-      "text": "Source: Historical data from the U.S. Census. Projected data prepared by MDP's State Data Center."
+      "text": ""
     }
   },
   "legend": {
@@ -651,1178 +180,85 @@
     },
     "position": "right"
   },
-  "series": [
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1900_Pop__sum",
-      "name": "1900_Pop",
-      "id": "F1900_Pop"
+  "dataSource": {
+    "type": "inline",
+    "configFields": {
+      "fillColor": "_fillColor"
     },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1910_Pop__sum",
-      "name": "1910_Pop",
-      "id": "F1910_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1920_Pop__sum",
-      "name": "1920_Pop",
-      "id": "F1920_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1930_Pop__sum",
-      "name": "1930_Pop",
-      "id": "F1930_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1940_Pop__sum",
-      "name": "1940_Pop",
-      "id": "F1940_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1950_Pop__sum",
-      "name": "1950_Pop",
-      "id": "F1950_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F1960_Pop__sum",
-      "name": "1960_Pop",
-      "id": "F1960_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
+    "data": [
+      {
+        "objectid": 0,
+        "FID_count": 28,
+        "Year": "2,010",
+        "Year_original": 2010,
+        "_fillColor_FID_count": [
           94,
           143,
           208,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
+        ]
       },
-      "x": "GEODESC_2",
-      "y": "F1970_Pop__sum",
-      "name": "1970_Pop",
-      "id": "F1970_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
+      {
+        "objectid": 1,
+        "FID_count": 31,
+        "Year": "2,011",
+        "Year_original": 2011,
+        "_fillColor_FID_count": [
+          119,
+          180,
+          132,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
+        ]
       },
-      "x": "GEODESC_2",
-      "y": "F1980_Pop__sum",
-      "name": "1980_Pop",
-      "id": "F1980_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
+      {
+        "objectid": 2,
+        "FID_count": 27,
+        "Year": "2,012",
+        "Year_original": 2012,
+        "_fillColor_FID_count": [
+          223,
+          107,
+          53,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
+        ]
       },
-      "x": "GEODESC_2",
-      "y": "F1990_Pop__sum",
-      "name": "1990_Pop",
-      "id": "F1990_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
+      {
+        "objectid": 3,
+        "FID_count": 20,
+        "Year": "2,013",
+        "Year_original": 2013,
+        "_fillColor_FID_count": [
+          219,
+          207,
+          78,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
+        ]
       },
-      "x": "GEODESC_2",
-      "y": "F2000_Pop__sum",
-      "name": "2000_Pop",
-      "id": "F2000_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
+      {
+        "objectid": 4,
+        "FID_count": 19,
+        "Year": "2,014",
+        "Year_original": 2014,
+        "_fillColor_FID_count": [
+          65,
+          84,
+          109,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
+        ]
       },
-      "x": "GEODESC_2",
-      "y": "F2010_Pop__sum",
-      "name": "2010_Pop",
-      "id": "F2010_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          101,
-          173,
-          255,
+      {
+        "objectid": 5,
+        "FID_count": 9,
+        "Year": "2,015",
+        "Year_original": 2015,
+        "_fillColor_FID_count": [
+          130,
+          87,
+          194,
           255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2015_Pop__sum",
-      "name": "2015_Pop",
-      "id": "F2015_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2020_Pop__sum",
-      "name": "2020_Pop",
-      "id": "F2020_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2025_Pop__sum",
-      "name": "2025_Pop",
-      "id": "F2025_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2030_Pop__sum",
-      "name": "2030_Pop",
-      "id": "F2030_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2035_Pop__sum",
-      "name": "2035_Pop",
-      "id": "F2035_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2040_Pop__sum",
-      "name": "2040_Pop",
-      "id": "F2040_Pop"
-    },
-    {
-      "type": "barSeries",
-      "rotated": false,
-      "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
-        }
-      },
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
-        "color": [
-          86,
-          248,
-          173,
-          255
-        ],
-        "outline": {
-          "type": "esriSLS",
-          "style": "esriSLSSolid",
-          "color": [
-            130,
-            130,
-            130,
-            255
-          ],
-          "width": 0
-        }
-      },
-      "x": "GEODESC_2",
-      "y": "F2045_Pop__sum",
-      "name": "2045_Pop",
-      "id": "F2045_Pop"
-    }
-  ],
-  "background": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "axes": [
-    {
-      "type": "chartAxis",
-      "visible": true,
-      "isLogarithmic": false,
-      "title": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            24,
-            24,
-            24,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 14,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "middle"
-        }
-      },
-      "labels": {
-        "type": "chartText",
-        "visible": true,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            68,
-            68,
-            68,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 12,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "middle",
-          "text": ""
-        }
-      },
-      "valueFormat": {
-        "type": "category",
-        "characterLimit": 11
-      },
-      "lineSymbol": {
-        "type": "esriSLS",
-        "style": "esriSLSSolid",
-        "color": [
-          139,
-          139,
-          139,
-          255
-        ],
-        "width": 1
-      },
-      "grid": {
-        "type": "esriSLS",
-        "style": "esriSLSDash",
-        "color": [
-          213,
-          213,
-          213,
-          255
-        ],
-        "width": 1
+        ]
       }
-    },
-    {
-      "type": "chartAxis",
-      "visible": true,
-      "isLogarithmic": false,
-      "title": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            24,
-            24,
-            24,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 14,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "middle"
-        }
-      },
-      "labels": {
-        "type": "chartText",
-        "visible": true,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            68,
-            68,
-            68,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 12,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "middle",
-          "text": ""
-        }
-      },
-      "valueFormat": {
-        "type": "number",
-        "intlOptions": {
-          "style": "decimal",
-          "useGrouping": true,
-          "minimumFractionDigits": 0,
-          "maximumFractionDigits": 3
-        }
-      },
-      "lineSymbol": {
-        "type": "esriSLS",
-        "style": "esriSLSSolid",
-        "color": [
-          139,
-          139,
-          139,
-          255
-        ],
-        "width": 1
-      },
-      "grid": {
-        "type": "esriSLS",
-        "style": "esriSLSDash",
-        "color": [
-          213,
-          213,
-          213,
-          255
-        ],
-        "width": 1
-      }
-    }
-  ]
+    ],
+    "processed": true
+  }
 }
