@@ -5,29 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ArcGIS Charts Demo</title>
 </head>
 
 <body>
-  <div style="display:flex;">
-    <div class="left">
-      <div style="width: 450.55px;height: 300px; box-sizing: border-box;border: 1px solid #000;">
-        <div class="toolbar" style="height: 38px; padding: 0px 8px;"></div>
-        <div style="width: 100%; height: calc(100% - 38px);" id="root"></div>
-      </div>
-      <div style="padding-top: 10px;">
-        <button id="create">Create chart</button>
-        <button id="select-all">Select all</button>
-        <button id="select-null">Select empty array</button>
-        <button id="select-by-index">Select by index</button>
-        <button id="clear-selection">Clear selection</button>
-      </div>
-    </div>
-    <div class="right" style="width:300px;margin-left: 10px;border: 1px solid #000;">
-      <span>console.log(e.detail.selectionSource)</span>
-      <div class="console" id="console" style="margin-top: 10px;"></div>
-    </div>
-  </div>
+  <div id="root" class="root"></div>
 </body>
 
 </html>

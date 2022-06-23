@@ -1,0 +1,14 @@
+.root {
+  min-height: 300px;
+}
+.view {
+  min-height: 300px;
+}
+.view2 {
+  display: flex;
+}
+.chart-container {
+  width: 451px;
+  height: 280px;
+  margin-right: 10px;
+}

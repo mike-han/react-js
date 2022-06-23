@@ -1,1 +1,0 @@
-const r={invalidData:"数据无效",invalidChart:"图表无效",tooManyFeatures:"要素过多",error:"错误",warning:"警告",newChart:"新建图表"},e={divNode:"创建图表需要 HTML div 节点。",errorRequest:"请修复以下错误： ",warningRequest:"请解决以下警告： ",newChartRequest:"配置图表。",queryError:"无法读取输入数据。",simpleError:"发生了一些错误。"};var a={modalHeaders:r,errors:e};export{a as default,e as errors,r as modalHeaders};
