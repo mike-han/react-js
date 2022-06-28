@@ -1,0 +1,38 @@
+[
+  {
+    "objectid": 0,
+    "FID_count": 28,
+    "Year": "2010",
+    "Year_original": 2010
+  },
+  {
+    "objectid": 1,
+    "FID_count": 31,
+    "Year": "2011",
+    "Year_original": 2011
+  },
+  {
+    "objectid": 2,
+    "FID_count": 27,
+    "Year": "2012",
+    "Year_original": 2012
+  },
+  {
+    "objectid": 3,
+    "FID_count": 20,
+    "Year": "2013",
+    "Year_original": 2013
+  },
+  {
+    "objectid": 4,
+    "FID_count": 19,
+    "Year": "2014",
+    "Year_original": 2014
+  },
+  {
+    "objectid": 5,
+    "FID_count": 9,
+    "Year": "2015",
+    "Year_original": 2015
+  }
+]

@@ -1,25 +1,25 @@
 {
   "version": "1.0.0",
-  "id": "widget_7-column",
+  "id": "widget_7-scatter",
   "type": "chart",
   "series": [
     {
-      "type": "barSeries",
-      "id": "FID",
-      "name": "Count",
-      "x": "Year",
-      "y": "FID_count",
+      "type": "scatterSeries",
       "colorType": "singleColor",
-      "stackedType": "sideBySide",
-      "fillSymbol": {
-        "type": "esriSFS",
-        "style": "esriSFSSolid",
+      "id": "Ward",
+      "name": "Ward",
+      "x": "District",
+      "y": "Ward",
+      "markerSymbol": {
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
         "color": [
           94,
           143,
           208,
           255
         ],
+        "size": 7,
         "outline": {
           "type": "esriSLS",
           "style": "esriSLSSolid",
@@ -32,29 +32,25 @@
           "width": 0
         }
       },
-      "dataLabels": {
-        "type": "chartText",
-        "visible": false,
-        "content": {
-          "type": "esriTS",
-          "color": [
-            54,
-            54,
-            54,
-            255
-          ],
-          "font": {
-            "family": "Avenir Next",
-            "size": 10,
-            "style": "normal",
-            "weight": "normal",
-            "decoration": "none"
-          },
-          "horizontalAlignment": "center",
-          "verticalAlignment": "top"
+      "overlays": {
+        "type": "chartOverlays",
+        "trendLine": {
+          "type": "chartOverlay",
+          "created": true,
+          "visible": true,
+          "symbol": {
+            "type": "esriSLS",
+            "style": "esriSLSSolid",
+            "color": [
+              223,
+              107,
+              53,
+              255
+            ],
+            "width": 2
+          }
         }
-      },
-      "rotated": false
+      }
     }
   ],
   "axes": [
@@ -107,8 +103,13 @@
         }
       },
       "valueFormat": {
-        "type": "category",
-        "characterLimit": 11
+        "type": "number",
+        "intlOptions": {
+          "style": "decimal",
+          "notation": "standard",
+          "minimumFractionDigits": 0,
+          "maximumFractionDigits": 0
+        }
       },
       "lineSymbol": {
         "type": "esriSLS",
@@ -185,7 +186,7 @@
         "type": "number",
         "intlOptions": {
           "style": "decimal",
-          "useGrouping": true,
+          "notation": "standard",
           "minimumFractionDigits": 0,
           "maximumFractionDigits": 0
         }
@@ -311,46 +312,6 @@
   },
   "dataSource": {
     "type": "inline",
-    "processed": true,
-    "data": {
-      "dataItems": [
-        {
-          "objectid": 0,
-          "FID_count": 28,
-          "Year": "2010",
-          "Year_original": 2010
-        },
-        {
-          "objectid": 1,
-          "FID_count": 31,
-          "Year": "2011",
-          "Year_original": 2011
-        },
-        {
-          "objectid": 2,
-          "FID_count": 27,
-          "Year": "2012",
-          "Year_original": 2012
-        },
-        {
-          "objectid": 3,
-          "FID_count": 20,
-          "Year": "2013",
-          "Year_original": 2013
-        },
-        {
-          "objectid": 4,
-          "FID_count": 19,
-          "Year": "2014",
-          "Year_original": 2014
-        },
-        {
-          "objectid": 5,
-          "FID_count": 9,
-          "Year": "2015",
-          "Year_original": 2015
-        }
-      ]
-    }
+    "processed": false
   }
 }

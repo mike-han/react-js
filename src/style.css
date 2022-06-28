@@ -4,7 +4,7 @@
 .view {
   min-height: 300px;
 }
-.view2 {
+.view1, .view2 {
   display: flex;
 }
 .chart-container {
