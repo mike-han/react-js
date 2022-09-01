@@ -1,6 +1,6 @@
-# The demo of arcgis-cahrts
+# The demo of arcgis-charts
 
-- Clone this repo and checkout to branch `ac-js-render-incorrectly-2`
+- Clone this repo and checkout to branch `f-rendering-missing`
 
 - Run `npm ci`
 
