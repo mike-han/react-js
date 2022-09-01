@@ -1,0 +1,82 @@
+{
+  "inlineData1":  {
+    "inputData": {
+      "dataItems": [
+        {
+          "objectid": 0,
+          "FID_count": 28,
+          "Year": "2,010",
+          "Year_original": 2010
+        },
+        {
+          "objectid": 1,
+          "FID_count": 31,
+          "Year": "2,011",
+          "Year_original": 2011
+        },
+        {
+          "objectid": 2,
+          "FID_count": 27,
+          "Year": "2,012",
+          "Year_original": 2012
+        },
+        {
+          "objectid": 3,
+          "FID_count": 20,
+          "Year": "2,013",
+          "Year_original": 2013
+        },
+        {
+          "objectid": 4,
+          "FID_count": 19,
+          "Year": "2,014",
+          "Year_original": 2014
+        },
+        {
+          "objectid": 5,
+          "FID_count": 9,
+          "Year": "2,015",
+          "Year_original": 2015
+        }
+      ]
+    },
+    "processed": true
+  },
+  "inlineData2":  {
+    "inputData": {
+      "dataItems": [
+        {
+          "objectid": 0,
+          "FID_count": 28,
+          "Year": "2,010",
+          "Year_original": 2010
+        },
+        {
+          "objectid": 1,
+          "FID_count": 31,
+          "Year": "2,011",
+          "Year_original": 2011
+        },
+        {
+          "objectid": 2,
+          "FID_count": 27,
+          "Year": "2,012",
+          "Year_original": 2012
+        },
+        {
+          "objectid": 3,
+          "FID_count": 20,
+          "Year": "2,013",
+          "Year_original": 2013
+        },
+        {
+          "objectid": 4,
+          "FID_count": 19,
+          "Year": "2,014",
+          "Year_original": 2014
+        }
+      ]
+    },
+    "processed": true
+  }
+}

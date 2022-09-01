@@ -1,14 +1,7 @@
 .root {
   min-height: 300px;
 }
-.view {
-  min-height: 300px;
-}
-.view1, .view2 {
-  display: flex;
-}
-.chart-container {
-  width: 451px;
-  height: 280px;
-  margin-right: 10px;
+:root, :host {
+  --arcgis-charts-bar-chart-width: 100%;
+  --arcgis-charts-bar-chart-height: 100%;
 }

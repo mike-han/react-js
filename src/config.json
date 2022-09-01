@@ -1,25 +1,25 @@
 {
   "version": "1.0.0",
-  "id": "widget_7-scatter",
+  "id": "widget_1-column",
   "type": "chart",
   "series": [
     {
-      "type": "scatterSeries",
+      "type": "barSeries",
+      "id": "FID",
+      "name": "Count",
+      "x": "Year",
+      "y": "FID_count",
       "colorType": "singleColor",
-      "id": "Ward",
-      "name": "Ward",
-      "x": "District",
-      "y": "Ward",
-      "markerSymbol": {
-        "type": "esriSMS",
-        "style": "esriSMSCircle",
+      "stackedType": "sideBySide",
+      "fillSymbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid",
         "color": [
           94,
           143,
           208,
           255
         ],
-        "size": 7,
         "outline": {
           "type": "esriSLS",
           "style": "esriSLSSolid",
@@ -32,24 +32,43 @@
           "width": 0
         }
       },
-      "overlays": {
-        "type": "chartOverlays",
-        "trendLine": {
-          "type": "chartOverlay",
-          "created": true,
-          "visible": true,
-          "symbol": {
-            "type": "esriSLS",
-            "style": "esriSLSSolid",
-            "color": [
-              223,
-              107,
-              53,
-              255
-            ],
-            "width": 2
-          }
+      "dataLabels": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            54,
+            54,
+            54,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 10,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "verticalAlignment": "top"
         }
+      },
+      "rotated": false,
+      "query": {
+        "groupByFieldsForStatistics": [
+          "Year"
+        ],
+        "outStatistics": [
+          {
+            "statisticType": "count",
+            "onStatisticField": "FID",
+            "outStatisticFieldName": "FID_count"
+          }
+        ],
+        "orderByFields": [
+          "Year ASC"
+        ]
       }
     }
   ],
@@ -103,13 +122,8 @@
         }
       },
       "valueFormat": {
-        "type": "number",
-        "intlOptions": {
-          "style": "decimal",
-          "notation": "standard",
-          "minimumFractionDigits": 0,
-          "maximumFractionDigits": 0
-        }
+        "type": "category",
+        "characterLimit": 11
       },
       "lineSymbol": {
         "type": "esriSLS",
@@ -186,7 +200,7 @@
         "type": "number",
         "intlOptions": {
           "style": "decimal",
-          "notation": "standard",
+          "useGrouping": true,
           "minimumFractionDigits": 0,
           "maximumFractionDigits": 0
         }
@@ -312,6 +326,6 @@
   },
   "dataSource": {
     "type": "inline",
-    "processed": false
+    "processed": true
   }
 }
