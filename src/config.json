@@ -1,14 +1,14 @@
 {
   "version": "1.0.0",
-  "id": "widget_7-pie",
+  "id": "widget_166-pie",
   "type": "chart",
   "series": [
     {
       "type": "pieSeries",
-      "colorType": "singleColor",
+      "colorType": "colorMatch",
       "id": "FID",
       "name": "Count",
-      "x": "Year",
+      "x": "Quality_Ch",
       "y": "FID_count",
       "innerRadius": 0,
       "startAngle": 0,
@@ -17,7 +17,7 @@
       "displayPercentageOnDataLabel": false,
       "displayNumericValueOnTooltip": true,
       "displayPercentageOnTooltip": true,
-      "dataLabelsOffset": 10,
+      "dataLabelsOffset": 0,
       "sliceGrouping": {
         "percentageThreshold": 0,
         "groupName": "Other"
@@ -44,18 +44,18 @@
         "type": "esriSFS",
         "style": "esriSFSSolid",
         "color": [
-          94,
-          143,
-          208,
+          214,
+          214,
+          214,
           255
         ],
         "outline": {
           "type": "esriSLS",
           "style": "esriSLSSolid",
           "color": [
-            240,
-            240,
-            240,
+            11,
+            11,
+            11,
             255
           ],
           "width": 1
@@ -67,14 +67,14 @@
         "content": {
           "type": "esriTS",
           "color": [
-            54,
-            54,
-            54,
+            197,
+            197,
+            197,
             255
           ],
           "font": {
             "family": "Avenir Next",
-            "size": 12,
+            "size": 10,
             "style": "normal",
             "weight": "normal",
             "decoration": "none"
@@ -82,7 +82,33 @@
           "horizontalAlignment": "center",
           "verticalAlignment": "top"
         }
-      }
+      },
+      "slices": [
+        {
+          "sliceId": "Approved",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              94,
+              143,
+              208,
+              255
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                11,
+                11,
+                11,
+                255
+              ],
+              "width": 1
+            }
+          }
+        }
+      ]
     }
   ],
   "background": [
@@ -97,9 +123,9 @@
     "content": {
       "type": "esriTS",
       "color": [
-        0,
-        0,
-        0,
+        255,
+        255,
+        255,
         255
       ],
       "font": {
@@ -110,7 +136,7 @@
         "decoration": "none"
       },
       "horizontalAlignment": "center",
-      "text": ""
+      "text": "Wall"
     }
   },
   "footer": {
@@ -119,9 +145,9 @@
     "content": {
       "type": "esriTS",
       "color": [
-        24,
-        24,
-        24,
+        227,
+        227,
+        227,
         255
       ],
       "font": {
@@ -137,16 +163,16 @@
   },
   "legend": {
     "type": "chartLegend",
-    "visible": false,
+    "visible": true,
     "title": {
       "type": "chartText",
       "visible": true,
       "content": {
         "type": "esriTS",
         "color": [
-          24,
-          24,
-          24,
+          227,
+          227,
+          227,
           255
         ],
         "font": {
@@ -163,9 +189,9 @@
     "body": {
       "type": "esriTS",
       "color": [
-        24,
-        24,
-        24,
+        227,
+        227,
+        227,
         255
       ],
       "font": {
@@ -185,40 +211,11 @@
     "processed": true,
     "data": [
       {
+        "FID_count": 75,
+        "Quality_Ch": "Approved",
+        "FID": "c1b77ea0-5be5-11ed-a6f0-5581c1b68e54",
         "objectid": 0,
-        "FID_count": 28,
-        "Year": "2010",
-        "Year_original": 2010
-      },
-      {
-        "objectid": 1,
-        "FID_count": 31,
-        "Year": "2011",
-        "Year_original": 2011
-      },
-      {
-        "objectid": 2,
-        "FID_count": 27,
-        "Year": "2012",
-        "Year_original": 2012
-      },
-      {
-        "objectid": 3,
-        "FID_count": 20,
-        "Year": "2013",
-        "Year_original": 2013
-      },
-      {
-        "objectid": 4,
-        "FID_count": 19,
-        "Year": "2014",
-        "Year_original": 2014
-      },
-      {
-        "objectid": 5,
-        "FID_count": 9,
-        "Year": "2015",
-        "Year_original": 2015
+        "arcgis_charts_slice_percent": 100
       }
     ]
   }
