@@ -1,6 +1,6 @@
 # The demo of arcgis-cahrts
 
-- Clone this repo and checkout to branch `ac-js-render-incorrectly`
+- Clone this repo
 
 - Run `npm ci`
 
