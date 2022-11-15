@@ -1,6 +1,6 @@
 # The demo of arcgis-cahrts
 
-- Clone this repo and switch to branch: f-chart-color-v403
+- Clone this repo and switch to branch: f-chart-color-v397
 
 - Run `npm ci`
 
