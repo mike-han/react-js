@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
-  "id": "widget_614-pie",
+  "id": "widget_1-donut",
   "type": "chart",
   "series": [
     {
       "type": "pieSeries",
       "colorType": "colorMatch",
-      "id": "ESRI_OID",
+      "id": "FID",
       "name": "Count",
-      "x": "ProgramTypeName",
-      "y": "ESRI_OID_count",
-      "innerRadius": 0,
+      "x": "Year",
+      "y": "FID_count",
+      "innerRadius": 60,
       "startAngle": 0,
       "endAngle": 360,
       "displayNumericValueOnDataLabel": true,
@@ -85,7 +85,7 @@
       },
       "slices": [
         {
-          "sliceId": "Grade 2 Maintenance CJP",
+          "sliceId": "2,010",
           "fillSymbol": {
             "type": "esriSFS",
             "style": "esriSFSSolid",
@@ -109,7 +109,7 @@
           }
         },
         {
-          "sliceId": "Leak Found Detail",
+          "sliceId": "2,011",
           "fillSymbol": {
             "type": "esriSFS",
             "style": "esriSFSSolid",
@@ -133,7 +133,7 @@
           }
         },
         {
-          "sliceId": "Leak Survey",
+          "sliceId": "2,012",
           "fillSymbol": {
             "type": "esriSFS",
             "style": "esriSFSSolid",
@@ -141,6 +141,78 @@
               223,
               107,
               53,
+              255
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                240,
+                240,
+                240,
+                255
+              ],
+              "width": 1
+            }
+          }
+        },
+        {
+          "sliceId": "2,013",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              219,
+              207,
+              78,
+              255
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                240,
+                240,
+                240,
+                255
+              ],
+              "width": 1
+            }
+          }
+        },
+        {
+          "sliceId": "2,014",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              65,
+              84,
+              109,
+              255
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "style": "esriSLSSolid",
+              "color": [
+                240,
+                240,
+                240,
+                255
+              ],
+              "width": 1
+            }
+          }
+        },
+        {
+          "sliceId": "2,015",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              130,
+              87,
+              194,
               255
             ],
             "outline": {
@@ -184,7 +256,7 @@
         "decoration": "none"
       },
       "horizontalAlignment": "center",
-      "text": ""
+      "text": "v1.0.0-beta.403"
     }
   },
   "footer": {
@@ -211,7 +283,7 @@
   },
   "legend": {
     "type": "chartLegend",
-    "visible": true,
+    "visible": false,
     "title": {
       "type": "chartText",
       "visible": true,
@@ -244,7 +316,7 @@
       ],
       "font": {
         "family": "Avenir Next",
-        "size": 10,
+        "size": 14,
         "style": "normal",
         "weight": "normal",
         "decoration": "none"
@@ -257,28 +329,6 @@
   "dataSource": {
     "type": "inline",
     "processed": true,
-    "data": [
-      {
-        "ESRI_OID_count": 2,
-        "ProgramTypeName": "Grade 2 Maintenance CJP",
-        "ESRI_OID": "387b3450-5fd3-11ed-98ba-f9bcc96d9c73",
-        "objectid": 0,
-        "arcgis_charts_slice_percent": 1.0869565217391304
-      },
-      {
-        "ESRI_OID_count": 1,
-        "ProgramTypeName": "Leak Found Detail",
-        "ESRI_OID": "387b3451-5fd3-11ed-98ba-f9bcc96d9c73",
-        "objectid": 1,
-        "arcgis_charts_slice_percent": 0.5434782608695652
-      },
-      {
-        "ESRI_OID_count": 181,
-        "ProgramTypeName": "Leak Survey",
-        "ESRI_OID": "387b3452-5fd3-11ed-98ba-f9bcc96d9c73",
-        "objectid": 2,
-        "arcgis_charts_slice_percent": 98.36956521739131
-      }
-    ]
+    "data": []
   }
 }
