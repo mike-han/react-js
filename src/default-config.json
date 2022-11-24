@@ -1,0 +1,354 @@
+{
+  "version": "3.0.0",
+  "type": "chart",
+  "id": "Chart 1669272826764",
+  "title": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        178.5
+      ],
+      "text": "Pie",
+      "font": {
+        "family": "Arial, Helvetica, sans-serif",
+        "size": 18,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center"
+    }
+  },
+  "subTitle": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        178.5
+      ],
+      "text": "",
+      "font": {
+        "family": "Arial, Helvetica, sans-serif",
+        "size": 10,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center"
+    }
+  },
+  "footer": {
+    "type": "chartText",
+    "visible": true,
+    "content": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        178.5
+      ],
+      "text": "",
+      "font": {
+        "family": "Arial, Helvetica, sans-serif",
+        "size": 11,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center"
+    }
+  },
+  "background": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "series": [
+    {
+      "type": "pieSeries",
+      "id": "Count Series",
+      "name": "Count Series",
+      "query": {
+        "outStatistics": [
+          {
+            "statisticType": "sum",
+            "onStatisticField": "Beat",
+            "outStatisticFieldName": "SUM_BEAT_0"
+          }
+        ],
+        "orderByFields": [
+          "SUM_BEAT_0 DESC"
+        ],
+        "groupByFieldsForStatistics": [
+          "Year"
+        ]
+      },
+      "x": "Year",
+      "y": "SUM_BEAT_0",
+      "colorType": "singleColor",
+      "fillSymbol": {
+        "type": "esriSFS",
+        "style": "esriSFSSolid"
+      },
+      "dataLabels": {
+        "type": "chartText",
+        "visible": false,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            0,
+            0,
+            0,
+            178.5
+          ],
+          "text": "",
+          "font": {
+            "family": "Arial, Helvetica, sans-serif",
+            "size": 10,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          }
+        }
+      },
+      "startAngle": -90,
+      "endAngle": 270,
+      "dataLabelsCharacterLimit": 11,
+      "displayNumericValueOnDataLabel": false,
+      "displayPercentageOnDataLabel": true,
+      "numericValueFormat": {
+        "type": "number",
+        "intlOptions": {
+          "minimumFractionDigits": 1,
+          "maximumFractionDigits": 1
+        }
+      },
+      "percentValueFormat": {
+        "type": "number",
+        "intlOptions": {
+          "minimumFractionDigits": 1,
+          "maximumFractionDigits": 1
+        }
+      },
+      "ticks": {
+        "type": "pieTick",
+        "visible": true,
+        "lineSymbol": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            156,
+            156,
+            156,
+            255
+          ],
+          "width": 1
+        }
+      },
+      "innerRadius": 50,
+      "sliceGrouping": {
+        "sliceId": "arcgis_charts_group_of_slices",
+        "percentageThreshold": 0
+      },
+      "slices": [
+        {
+          "sliceId": "2011",
+          "label": "2011",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              31,
+              120,
+              180,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                31,
+                120,
+                180,
+                178.5
+              ]
+            }
+          }
+        },
+        {
+          "sliceId": "2012",
+          "label": "2012",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              166,
+              206,
+              227,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                166,
+                206,
+                227,
+                178.5
+              ]
+            }
+          }
+        },
+        {
+          "sliceId": "2010",
+          "label": "2010",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              51,
+              160,
+              44,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                51,
+                160,
+                44,
+                178.5
+              ]
+            }
+          }
+        },
+        {
+          "sliceId": "2013",
+          "label": "2013",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              178,
+              223,
+              138,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                178,
+                223,
+                138,
+                178.5
+              ]
+            }
+          }
+        },
+        {
+          "sliceId": "2014",
+          "label": "2014",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              227,
+              26,
+              28,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                227,
+                26,
+                28,
+                178.5
+              ]
+            }
+          }
+        },
+        {
+          "sliceId": "2015",
+          "label": "2015",
+          "fillSymbol": {
+            "type": "esriSFS",
+            "style": "esriSFSSolid",
+            "color": [
+              251,
+              154,
+              153,
+              178.5
+            ],
+            "outline": {
+              "type": "esriSLS",
+              "color": [
+                251,
+                154,
+                153,
+                178.5
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "legend": {
+    "type": "chartLegend",
+    "visible": true,
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          0,
+          0,
+          0,
+          178.5
+        ],
+        "text": "",
+        "font": {
+          "family": "Arial, Helvetica, sans-serif",
+          "size": 13,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center"
+      }
+    },
+    "body": {
+      "type": "esriTS",
+      "color": [
+        0,
+        0,
+        0,
+        178.5
+      ],
+      "text": "",
+      "font": {
+        "family": "Arial, Helvetica, sans-serif",
+        "size": 12,
+        "style": "normal",
+        "weight": "normal",
+        "decoration": "none"
+      },
+      "horizontalAlignment": "center"
+    },
+    "position": "right",
+    "maxHeight": null,
+    "displayNumericValue": false,
+    "displayPercentage": true
+  }
+}
