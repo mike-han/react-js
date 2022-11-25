@@ -10,7 +10,7 @@ import { LayerFactory } from './layer-factory'
 const Root = () => {
   const [layer, setLayer] = React.useState()
   const [json, setJson] = React.useState(defaultConfig)
-  const [config, setConfig] = React.useState()
+  const [config, setConfig] = React.useState(json)
 
   const handleUpdate = () => {
     setConfig(json)
@@ -23,12 +23,15 @@ const Root = () => {
         <JsonEditor value={json} onChange={setJson} />
       </div>
       <div className='right-part'>
-        <ChartComponent config={config}  />
+        {layer && config && <ChartComponent config={config} featureLayer={layer} />}
       </div>
     </div>
     <div className='footer'>
-      <LayerFactory onCreate={setLayer} />
-      <button disabled={!layer} onClick={handleUpdate}>Update</button>
+      <div className='left-part'>
+        <LayerFactory onCreate={setLayer} />
+        <button disabled={!layer} onClick={handleUpdate}>Update</button>
+      </div>
+
     </div>
   </div>
 }

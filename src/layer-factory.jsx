@@ -24,6 +24,6 @@ export const LayerFactory = (props) => {
 
   return <div className="layer-factory">
     <input value={url} onChange={e => setUrl(e.target.value)} />
-    <button onClick={handleClick}>Create Layer</button>
+    <button className="create-btn" onClick={handleClick}>Create</button>
   </div>
 }

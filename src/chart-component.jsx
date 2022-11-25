@@ -66,23 +66,11 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
     className,
     config,
     featureLayer,
-    view,
-    rotation,
-    legendPosition,
-    legendVisibility,
-    xAxisLabelFormatter,
-    yAxisLabelFormatter,
 
     runtimeDataFilters,
     selectionData,
-    selectionTheme,
     chartLimits,
-    placeholder,
-    tooltipFormatter,
-    dataLabelFormatter,
     actionMode,
-    filterBySelection,
-    disableInteractions,
     noDataOptions,
 
     autoDisposeChart,
@@ -116,43 +104,18 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
 
   React.useEffect(() => {
     ref.current.featureLayer = featureLayer
-    ref.current.view = view
-    ref.current.rotation = rotation
-    ref.current.legendPosition = legendPosition
-    ref.current.legendVisibility = legendVisibility
-    ref.current.legendVisibility = legendVisibility
-    ref.current.xAxisLabelFormatter = xAxisLabelFormatter
-    ref.current.yAxisLabelFormatter = yAxisLabelFormatter
   }, [
-    featureLayer,
-    view,
-    rotation,
-    legendPosition,
-    legendVisibility,
-    xAxisLabelFormatter,
-    yAxisLabelFormatter
+    featureLayer
   ])
 
   React.useEffect(() => {
     ref.current.selectionData = selectionData
-    ref.current.selectionTheme = selectionTheme
     ref.current.chartLimits = chartLimits
-    ref.current.placeholder = placeholder
-    ref.current.tooltipFormatter = tooltipFormatter
-    ref.current.dataLabelFormatter = dataLabelFormatter
     ref.current.actionMode = actionMode
-    ref.current.filterBySelection = filterBySelection
-    ref.current.disableInteractions = disableInteractions
   }, [
     selectionData,
-    selectionTheme,
     chartLimits,
-    placeholder,
-    tooltipFormatter,
-    dataLabelFormatter,
-    actionMode,
-    filterBySelection,
-    disableInteractions
+    actionMode
   ])
 
   React.useEffect(() => {
