@@ -1,37 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
-import defaultConfig from './default-config.json'
-import { JsonEditor } from './json-editor';
-import { ChartComponent } from './chart-component'
-import { LayerFactory } from './layer-factory'
+import './styles/root.scss';
+import defaultConfigs from './config/default.json'
+import { JsonEditor, ChartComponent, LayerFactory } from './components';
+import { ConfigEditor } from './config-editor';
 
+const defaultRuntimeFilters = { where: '1=1' }
+// const defaultRuntimeFilters = { timeExtent: [1579564800000, 1582243200000] }
 
 const Root = () => {
+  const editorRef = React.useRef(null)
   const [layer, setLayer] = React.useState()
-  const [json, setJson] = React.useState(defaultConfig)
-  const [config, setConfig] = React.useState(json)
+  const [dataSource, setDataSource] = React.useState()
+  const [webMapWebChart, setWebMapWebChart] = React.useState()
+  const [rawRuntimeFilters, setRawRuntimeFilters] = React.useState(defaultRuntimeFilters)
+  const [runtimeFilters, setRuntimeFilters] = React.useState(rawRuntimeFilters)
 
-  const handleUpdate = () => {
-    setConfig(json)
-  }
-
+  const dataSourceReady = !!layer || !!dataSource?.featureLayer
 
   return <div className='root'>
-    <div className='body'>
-      <div className='left-part'>
-        <JsonEditor value={json} onChange={setJson} />
-      </div>
-      <div className='right-part'>
-        {layer && config && <ChartComponent config={config} featureLayer={layer} />}
-      </div>
+    <div className='left-part'>
+      <ConfigEditor disabled={!dataSourceReady} defaultValue={defaultConfigs.bar} onChange={setWebMapWebChart} />
+      <LayerFactory onCreateLayer={setLayer} onCreateDataSource={setDataSource} />
     </div>
-    <div className='footer'>
-      <div className='left-part'>
-        <LayerFactory onCreate={setLayer} />
-        <button disabled={!layer} onClick={handleUpdate}>Update</button>
-      </div>
-
+    <div className='middle-part'>
+      <JsonEditor disabled={!dataSourceReady} value={rawRuntimeFilters} onChange={setRawRuntimeFilters} onUpdate={() => setRuntimeFilters(rawRuntimeFilters)} />
+    </div>
+    <div className='right-part'>
+      {(layer || dataSource) && webMapWebChart && <ChartComponent dataSource={dataSource} webMapWebChart={webMapWebChart} featureLayer={layer} runtimeDataFilters={runtimeFilters} />}
     </div>
   </div>
 }

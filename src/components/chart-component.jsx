@@ -64,7 +64,8 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
 
   const {
     className,
-    config,
+    dataSource,
+    webMapWebChart,
     featureLayer,
 
     runtimeDataFilters,
@@ -91,6 +92,15 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
     arcgisChartsNoRenderPropChange
   } = props
 
+  const config = React.useMemo(() => {
+    if(featureLayer) return webMapWebChart
+
+    return {
+      ...webMapWebChart,
+      dataSource
+    }
+  }, [webMapWebChart, dataSource, featureLayer])
+
   const seriesType = getSeriesType(config)
   const component = getChartComponentTag(seriesType)
 
@@ -103,7 +113,9 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
   }, [runtimeDataFilters])
 
   React.useEffect(() => {
-    ref.current.featureLayer = featureLayer
+    if (featureLayer) {
+      ref.current.featureLayer = featureLayer
+    }
   }, [
     featureLayer
   ])
@@ -147,7 +159,15 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
   useRegisterEvent(ref, 'arcgisChartsActionBarToggle', arcgisChartsActionBarToggle)
   useRegisterEvent(ref, 'arcgisChartsNoRenderPropChange', arcgisChartsNoRenderPropChange)
 
-  return (
-    React.createElement(component, { ref: handleRef, className })
-  )
+  if(seriesType === 'barSeries') {
+    return React.createElement('arcgis-charts-bar-chart', { ref: handleRef, className })
+  }else if (seriesType === 'lineSeries') {
+    return React.createElement('arcgis-charts-line-chart', { ref: handleRef, className })
+  }else if (seriesType === 'pieSeries') {
+    return React.createElement('arcgis-charts-pie-chart', { ref: handleRef, className })
+  }else if (seriesType === 'scatterSeries') {
+    return React.createElement('arcgis-charts-scatter-plot', { ref: handleRef, className })
+  }else if (seriesType === 'histogramSeries') {
+    return React.createElement('arcgis-charts-histogram', { ref: handleRef, className })
+  }
 })
