@@ -1,0 +1,1149 @@
+{
+  "bar": {
+    "version": "1.0.0",
+    "id": "widget_3-column",
+    "type": "chart",
+    "series": [
+      {
+        "type": "barSeries",
+        "id": "OBJECTID",
+        "name": "Count",
+        "x": "Age_Group",
+        "y": "OBJECTID_count",
+        "colorType": "singleColor",
+        "stackedType": "sideBySide",
+        "fillSymbol": {
+          "type": "esriSFS",
+          "style": "esriSFSSolid",
+          "color": [
+            94,
+            143,
+            208,
+            255
+          ],
+          "outline": {
+            "type": "esriSLS",
+            "style": "esriSLSSolid",
+            "color": [
+              130,
+              130,
+              130,
+              255
+            ],
+            "width": 0
+          }
+        },
+        "dataLabels": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              54,
+              54,
+              54,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 10,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "top"
+          }
+        },
+        "rotated": false,
+        "query": {
+          "groupByFieldsForStatistics": [
+            "Age_Group"
+          ],
+          "outStatistics": [
+            {
+              "statisticType": "count",
+              "onStatisticField": "OBJECTID",
+              "outStatisticFieldName": "OBJECTID_count"
+            }
+          ],
+          "orderByFields": [
+            "Age_Group ASC"
+          ]
+        }
+      }
+    ],
+    "axes": [
+      {
+        "type": "chartAxis",
+        "visible": true,
+        "isLogarithmic": false,
+        "title": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              24,
+              24,
+              24,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "labels": {
+          "type": "chartText",
+          "visible": true,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              68,
+              68,
+              68,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "valueFormat": {
+          "type": "category",
+          "characterLimit": 11
+        },
+        "lineSymbol": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "width": 1
+        },
+        "grid": {
+          "type": "esriSLS",
+          "style": "esriSLSDash",
+          "color": [
+            213,
+            213,
+            213,
+            255
+          ],
+          "width": 0
+        }
+      },
+      {
+        "type": "chartAxis",
+        "visible": true,
+        "isLogarithmic": false,
+        "title": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              24,
+              24,
+              24,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "labels": {
+          "type": "chartText",
+          "visible": true,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              68,
+              68,
+              68,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "valueFormat": {
+          "type": "number",
+          "intlOptions": {
+            "style": "decimal",
+            "useGrouping": true,
+            "minimumFractionDigits": 0,
+            "maximumFractionDigits": 0
+          }
+        },
+        "lineSymbol": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "width": 1
+        },
+        "grid": {
+          "type": "esriSLS",
+          "style": "esriSLSDash",
+          "color": [
+            213,
+            213,
+            213,
+            255
+          ],
+          "width": 0
+        }
+      }
+    ],
+    "background": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 24,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "footer": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "legend": {
+      "type": "chartLegend",
+      "visible": false,
+      "title": {
+        "type": "chartText",
+        "visible": true,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 20,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "text": ""
+        }
+      },
+      "body": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      },
+      "position": "right"
+    }
+  },
+  "histogram": {
+    "version": "1.0.0",
+    "id": "widget_3-histogram",
+    "type": "chart",
+    "series": [
+      {
+        "type": "histogramSeries",
+        "colorType": "singleColor",
+        "id": "Row_ID",
+        "name": "Row_ID",
+        "x": "Row_ID",
+        "binCount": 15,
+        "overlays": {
+          "type": "chartOverlays",
+          "mean": {
+            "type": "chartOverlay",
+            "visible": false,
+            "created": false,
+            "symbol": {
+              "type": "esriSLS",
+              "style": "esriSLSDash",
+              "color": [
+                166,
+                206,
+                227,
+                255
+              ],
+              "width": 1
+            }
+          },
+          "median": {
+            "type": "chartOverlay",
+            "visible": false,
+            "created": false,
+            "symbol": {
+              "type": "esriSLS",
+              "style": "esriSLSDash",
+              "color": [
+                51,
+                160,
+                44,
+                255
+              ],
+              "width": 1
+            }
+          },
+          "standardDeviation": {
+            "type": "chartOverlay",
+            "visible": false,
+            "created": false,
+            "symbol": {
+              "type": "esriSLS",
+              "style": "esriSLSDash",
+              "color": [
+                178,
+                223,
+                138,
+                255
+              ],
+              "width": 1
+            }
+          },
+          "comparisonDistribution": {
+            "type": "chartOverlay",
+            "visible": false,
+            "created": false,
+            "symbol": {
+              "type": "esriSLS",
+              "color": [
+                227,
+                26,
+                28,
+                255
+              ],
+              "width": 1
+            }
+          }
+        },
+        "dataTransformationType": "none",
+        "fillSymbol": {
+          "type": "esriSFS",
+          "style": "esriSFSSolid",
+          "color": [
+            94,
+            143,
+            208,
+            255
+          ],
+          "outline": {
+            "type": "esriSLS",
+            "style": "esriSLSSolid",
+            "color": [
+              130,
+              130,
+              130,
+              255
+            ],
+            "width": 0
+          }
+        },
+        "dataLabels": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              54,
+              54,
+              54,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 10,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "right",
+            "verticalAlignment": "middle"
+          }
+        },
+        "rotated": false
+      }
+    ],
+    "axes": [
+      {
+        "type": "chartAxis",
+        "visible": true,
+        "isLogarithmic": false,
+        "title": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              24,
+              24,
+              24,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "labels": {
+          "type": "chartText",
+          "visible": true,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              68,
+              68,
+              68,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "valueFormat": {
+          "type": "number",
+          "intlOptions": {
+            "style": "decimal",
+            "notation": "standard",
+            "minimumFractionDigits": 0,
+            "maximumFractionDigits": 2
+          }
+        },
+        "lineSymbol": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "width": 1
+        },
+        "grid": {
+          "type": "esriSLS",
+          "style": "esriSLSDash",
+          "color": [
+            213,
+            213,
+            213,
+            255
+          ],
+          "width": 0
+        }
+      },
+      {
+        "type": "chartAxis",
+        "visible": true,
+        "isLogarithmic": false,
+        "title": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              24,
+              24,
+              24,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "labels": {
+          "type": "chartText",
+          "visible": true,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              68,
+              68,
+              68,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 14,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle"
+          }
+        },
+        "valueFormat": {
+          "type": "number",
+          "intlOptions": {
+            "style": "decimal",
+            "notation": "standard",
+            "minimumFractionDigits": 0,
+            "maximumFractionDigits": 0
+          }
+        },
+        "lineSymbol": {
+          "type": "esriSLS",
+          "style": "esriSLSSolid",
+          "color": [
+            139,
+            139,
+            139,
+            255
+          ],
+          "width": 1
+        },
+        "grid": {
+          "type": "esriSLS",
+          "style": "esriSLSDash",
+          "color": [
+            213,
+            213,
+            213,
+            255
+          ],
+          "width": 0
+        }
+      }
+    ],
+    "background": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 24,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "footer": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "legend": {
+      "type": "chartLegend",
+      "visible": false,
+      "title": {
+        "type": "chartText",
+        "visible": true,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 20,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "text": ""
+        }
+      },
+      "body": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      },
+      "position": "right"
+    }
+  },
+  "pie": {
+    "version": "1.0.0",
+    "id": "widget_3-donut",
+    "type": "chart",
+    "series": [
+      {
+        "type": "pieSeries",
+        "colorType": "colorMatch",
+        "id": "OBJECTID",
+        "name": "Count",
+        "x": "Age_Group",
+        "y": "OBJECTID_count",
+        "innerRadius": 60,
+        "startAngle": 0,
+        "endAngle": 360,
+        "displayNumericValueOnDataLabel": true,
+        "displayPercentageOnDataLabel": false,
+        "displayNumericValueOnTooltip": true,
+        "displayPercentageOnTooltip": true,
+        "dataLabelsOffset": 0,
+         "query": {
+          "outStatistics": [
+            {
+              "statisticType": "count",
+              "onStatisticField": "OBJECTID",
+              "outStatisticFieldName": "OBJECTID_count"
+            }
+          ],
+          "groupByFieldsForStatistics": [
+            "Age_Group"
+          ]
+        },
+        "sliceGrouping": {
+          "percentageThreshold": 0,
+          "groupName": "Other"
+        },
+        "numericValueFormat": {
+          "type": "number",
+          "intlOptions": {
+            "style": "decimal",
+            "useGrouping": true,
+            "minimumFractionDigits": 0,
+            "maximumFractionDigits": 3
+          }
+        },
+        "percentValueFormat": {
+          "type": "number",
+          "intlOptions": {
+            "style": "decimal",
+            "useGrouping": true,
+            "minimumFractionDigits": 0,
+            "maximumFractionDigits": 3
+          }
+        },
+        "fillSymbol": {
+          "type": "esriSFS",
+          "style": "esriSFSSolid",
+          "color": [
+            214,
+            214,
+            214,
+            255
+          ],
+          "outline": {
+            "type": "esriSLS",
+            "style": "esriSLSSolid",
+            "color": [
+              240,
+              240,
+              240,
+              255
+            ],
+            "width": 1
+          }
+        },
+        "dataLabels": {
+          "type": "chartText",
+          "visible": false,
+          "content": {
+            "type": "esriTS",
+            "color": [
+              54,
+              54,
+              54,
+              255
+            ],
+            "font": {
+              "family": "Avenir Next",
+              "size": 10,
+              "style": "normal",
+              "weight": "normal",
+              "decoration": "none"
+            },
+            "horizontalAlignment": "center",
+            "verticalAlignment": "top"
+          }
+        },
+        "slices": [
+          {
+            "sliceId": "<20",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                94,
+                143,
+                208,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "20s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                119,
+                180,
+                132,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "30s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                223,
+                107,
+                53,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "40s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                219,
+                207,
+                78,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "50s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                65,
+                84,
+                109,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "60s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                130,
+                87,
+                194,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "70s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                214,
+                85,
+                139,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "80s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                94,
+                143,
+                208,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "90s",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                119,
+                180,
+                132,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          },
+          {
+            "sliceId": "Unknown",
+            "fillSymbol": {
+              "type": "esriSFS",
+              "style": "esriSFSSolid",
+              "color": [
+                223,
+                107,
+                53,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "style": "esriSLSSolid",
+                "color": [
+                  240,
+                  240,
+                  240,
+                  255
+                ],
+                "width": 1
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "background": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "title": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 24,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "footer": {
+      "type": "chartText",
+      "visible": true,
+      "content": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      }
+    },
+    "legend": {
+      "type": "chartLegend",
+      "visible": false,
+      "title": {
+        "type": "chartText",
+        "visible": true,
+        "content": {
+          "type": "esriTS",
+          "color": [
+            24,
+            24,
+            24,
+            255
+          ],
+          "font": {
+            "family": "Avenir Next",
+            "size": 20,
+            "style": "normal",
+            "weight": "normal",
+            "decoration": "none"
+          },
+          "horizontalAlignment": "center",
+          "text": ""
+        }
+      },
+      "body": {
+        "type": "esriTS",
+        "color": [
+          24,
+          24,
+          24,
+          255
+        ],
+        "font": {
+          "family": "Avenir Next",
+          "size": 14,
+          "style": "normal",
+          "weight": "normal",
+          "decoration": "none"
+        },
+        "horizontalAlignment": "center",
+        "text": ""
+      },
+      "position": "right"
+    }
+  }
+}

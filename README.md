@@ -1,4 +1,4 @@
-# The demo of arcgis-cahrts
+# The demo of arcgis-charts
 
 - Clone this repo
 

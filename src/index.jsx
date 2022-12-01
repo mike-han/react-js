@@ -1,40 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './style.css';
-import { createChart } from '@arcgis/charts-js'
-import config from './config.json'
+import './styles/root.scss';
+import defaultConfigs from './config/default.json'
+import { JsonEditor, ChartComponent, LayerFactory } from './components';
+import { ConfigEditor } from './config-editor';
+
+const defaultRuntimeFilters = { where: '1=1' }
+// const defaultRuntimeFilters = { timeExtent: [1579564800000, 1582243200000] }
 
 const Root = () => {
+  const editorRef = React.useRef(null)
+  const [layer, setLayer] = React.useState()
+  const [dataSource, setDataSource] = React.useState()
+  const [webMapWebChart, setWebMapWebChart] = React.useState()
+  const [rawRuntimeFilters, setRawRuntimeFilters] = React.useState(defaultRuntimeFilters)
+  const [runtimeFilters, setRuntimeFilters] = React.useState(rawRuntimeFilters)
 
-  React.useEffect(() => {
-    const container1 = document.getElementById('container1')
-    createChart({
-      chartConfig: config,
-      chartContainer: container1,
-      options: { dataUpdated: true }
-    })
-    setTimeout(() => {
-      const container2 = document.getElementById('container2')
-      createChart({
-        chartConfig: config,
-        chartContainer: container2,
-        options: { dataUpdated: true }
-      })
-      const container3 = document.getElementById('container3')
-      createChart({
-        chartConfig: config,
-        chartContainer: container3,
-        options: { dataUpdated: true }
-      })
-    }, 1000)
-
-  }, [])
-
+  const dataSourceReady = !!layer || !!dataSource?.featureLayer
 
   return <div className='root'>
-    <div className="chart-container" id="container1"></div>
-    <div className="chart-container" id="container2"></div>
-    <div className="chart-container" id="container3"></div>
+    <div className='left-part'>
+      <ConfigEditor disabled={!dataSourceReady} defaultValue={defaultConfigs.bar} onChange={setWebMapWebChart} />
+      <LayerFactory onCreateLayer={setLayer} onCreateDataSource={setDataSource} />
+    </div>
+    <div className='middle-part'>
+      <JsonEditor disabled={!dataSourceReady} value={rawRuntimeFilters} onChange={setRawRuntimeFilters} onUpdate={() => setRuntimeFilters(rawRuntimeFilters)} />
+    </div>
+    <div className='right-part'>
+      {(layer || dataSource) && webMapWebChart && <ChartComponent dataSource={dataSource} webMapWebChart={webMapWebChart} featureLayer={layer} runtimeDataFilters={runtimeFilters} />}
+    </div>
   </div>
 }
 
