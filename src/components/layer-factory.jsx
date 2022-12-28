@@ -6,6 +6,9 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import clsx from "clsx";
 
+const DefaultServices = ['https://servicesdev.arcgis.com/f126c8da131543019b05e4bfab6fc6ac/arcgis/rest/services/ChicagoCr/FeatureServer/0',
+  'https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/Ontario_Daily_Case_Progression/FeatureServer/0']
+
 const CacheLayers = {}
 const createFeatureLayer = (url) => {
   if (!url) return null
@@ -31,7 +34,7 @@ const createFeatureLayerDataSource = (url) => {
 
 export const LayerFactory = (props) => {
   const { onCreateDataSource, onCreateLayer, className } = props
-  const [url, setUrl] = React.useState('https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/Ontario_Daily_Case_Progression/FeatureServer/0')
+  const [url, setUrl] = React.useState(DefaultServices[0])
 
   const handleLayerCreated = () => {
     const fl = createFeatureLayer(url)
