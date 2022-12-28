@@ -1,6 +1,10 @@
 import React from "react";
 import FeatureLayer from '@arcgis/core/layers/FeatureLayer'
 import styled from "@emotion/styled";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import clsx from "clsx";
 
 const CacheLayers = {}
 const createFeatureLayer = (url) => {
@@ -25,20 +29,8 @@ const createFeatureLayerDataSource = (url) => {
   }
 }
 
-const Root = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  > input {
-    width: 90%;
-  }
-  .create-btn {
-    margin-left: 10px;
-  }
-`
-
 export const LayerFactory = (props) => {
-  const { onCreateDataSource, onCreateLayer } = props
+  const { onCreateDataSource, onCreateLayer, className } = props
   const [url, setUrl] = React.useState('https://services9.arcgis.com/pJENMVYPQqZZe20v/arcgis/rest/services/Ontario_Daily_Case_Progression/FeatureServer/0')
 
   const handleLayerCreated = () => {
@@ -51,9 +43,11 @@ export const LayerFactory = (props) => {
     onCreateDataSource?.(ds)
   }
 
-  return <Root className="layer-factory">
-    <input value={url} onChange={e => setUrl(e.target.value)} />
-    <button className="create-btn" disabled={!url} onClick={handleLayerCreated}>Create API layer</button>
-    <button className="create-btn" disabled={!url} onClick={handleDataSourceCreated}>Create FL data source</button>
-  </Root>
+  return (<Stack spacing={2} direction="column" className={clsx('layer-factory', className)}>
+    <TextField id="standard-basic" label="Please enter service URL" variant="standard" value={url} onChange={e => setUrl(e.target.value)} />
+    <Stack spacing={2} direction="row">
+      <Button className="w-50" variant="outlined" disabled={!url} onClick={handleLayerCreated}>Create API layer</Button>
+      <Button className="w-50" variant="outlined" disabled={!url} onClick={handleDataSourceCreated}>Create Feature Layer data source</Button>
+    </Stack>
+  </Stack>)
 }

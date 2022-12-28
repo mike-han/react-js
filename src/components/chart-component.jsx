@@ -9,7 +9,7 @@ const getSeriesType = (config) => {
   return config?.series?.[0]?.type
 }
 
-const useForkChartRef =(ref, chartRef) => {
+const useForkChartRef = (ref, chartRef) => {
   const handleRef = React.useMemo(() => {
     if (ref == null && chartRef == null) {
       return null
@@ -43,15 +43,15 @@ const useRegisterEvent = (nodeRef, eventName, callback) => {
 }
 
 const getChartComponentTag = (seriesType) => {
-  if(seriesType === 'barSeries') {
+  if (seriesType === 'barSeries') {
     return 'arcgis-charts-bar-chart'
-  }else if (seriesType === 'lineSeries') {
+  } else if (seriesType === 'lineSeries') {
     return 'arcgis-charts-line-chart'
-  }else if (seriesType === 'pieSeries') {
+  } else if (seriesType === 'pieSeries') {
     return 'arcgis-charts-pie-chart'
-  }else if (seriesType === 'scatterSeries') {
+  } else if (seriesType === 'scatterSeries') {
     return 'arcgis-charts-scatter-plot'
-  }else if (seriesType === 'histogramSeries') {
+  } else if (seriesType === 'histogramSeries') {
     return 'arcgis-charts-histogram'
   } else {
     return 'div'
@@ -93,7 +93,7 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
   } = props
 
   const config = React.useMemo(() => {
-    if(featureLayer) return webMapWebChart
+    if (featureLayer) return webMapWebChart
 
     return {
       ...webMapWebChart,
@@ -106,19 +106,14 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
 
   React.useEffect(() => {
     ref.current.config = config
-  }, [config])
+    if (featureLayer) {
+      ref.current.featureLayer = featureLayer
+    }
+  }, [config, featureLayer])
 
   React.useEffect(() => {
     ref.current.runtimeDataFilters = runtimeDataFilters
   }, [runtimeDataFilters])
-
-  React.useEffect(() => {
-    if (featureLayer) {
-      ref.current.featureLayer = featureLayer
-    }
-  }, [
-    featureLayer
-  ])
 
   React.useEffect(() => {
     ref.current.selectionData = selectionData
@@ -159,15 +154,31 @@ export const ChartComponent = React.forwardRef((props, chartRef) => {
   useRegisterEvent(ref, 'arcgisChartsActionBarToggle', arcgisChartsActionBarToggle)
   useRegisterEvent(ref, 'arcgisChartsNoRenderPropChange', arcgisChartsNoRenderPropChange)
 
-  if(seriesType === 'barSeries') {
-    return React.createElement('arcgis-charts-bar-chart', { ref: handleRef, className })
-  }else if (seriesType === 'lineSeries') {
-    return React.createElement('arcgis-charts-line-chart', { ref: handleRef, className })
-  }else if (seriesType === 'pieSeries') {
-    return React.createElement('arcgis-charts-pie-chart', { ref: handleRef, className })
-  }else if (seriesType === 'scatterSeries') {
-    return React.createElement('arcgis-charts-scatter-plot', { ref: handleRef, className })
-  }else if (seriesType === 'histogramSeries') {
-    return React.createElement('arcgis-charts-histogram', { ref: handleRef, className })
+  if (seriesType === 'barSeries') {
+    return <BarChart ref={handleRef} className={className} />
+  } else if (seriesType === 'lineSeries') {
+    return <LineChart ref={handleRef} className={className} />
+  } else if (seriesType === 'pieSeries') {
+    return <PieChart ref={handleRef} className={className} />
+  } else if (seriesType === 'scatterSeries') {
+    return <ScatterPlotChart ref={handleRef} className={className} />
+  } else if (seriesType === 'histogramSeries') {
+    return <HistogramChart ref={handleRef} className={className} />
   }
+})
+
+const BarChart = React.forwardRef((props, ref) => {
+  return <arcgis-charts-bar-chart {...props} ref={ref} />
+})
+const LineChart = React.forwardRef((props, ref) => {
+  return <arcgis-charts-line-chart {...props} ref={ref} />
+})
+const PieChart = React.forwardRef((props, ref) => {
+  return <arcgis-charts-pie-chart {...props} ref={ref} />
+})
+const ScatterPlotChart = React.forwardRef((props, ref) => {
+  return <arcgis-charts-scatter-plot {...props} ref={ref} />
+})
+const HistogramChart = React.forwardRef((props, ref) => {
+  return <arcgis-charts-histogram {...props} ref={ref} />
 })
